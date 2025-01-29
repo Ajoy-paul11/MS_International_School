@@ -1,12 +1,17 @@
-import React from 'react'
-import kidImage from "../assets/pngwing.png"
+import React, { useState, useEffect, useRef } from 'react'
+import kidImage from "../assets/kid.png"
+import { PiStudentFill } from "react-icons/pi";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { SiGoogleclassroom } from "react-icons/si";
+import CountUp from 'react-countup';
 
 
 function HeroSection() {
+
   return (
     // bg-gradient-to-r from-[#0D9488] to-[#0891B2]
 
-    <div className=' relative animate-gradient bg-[length:400%_400%]'
+    <div className=' relative animate-gradient bg-[length:400%_400%] overflow-hidden'
     ><style>{`
         @keyframes gradient {
           0% {
@@ -34,15 +39,34 @@ function HeroSection() {
         }
       `}</style>
         <div>
-            <div className=' xl:container xl:mx-auto md:mx-5 flex justify-start items-center p-4 h-[90vh]'>
-                <div className='text-white'>
-                    <h1 className='text-5xl font-bold'>Welcome to <br /> M S INTERNATIONAL <br /> PUBLIC SCHOOL</h1>
-                    <p className='text-xl mt-4 text-[#1E3A8A]'>" Viveka Vidhya Samsthe "</p>
+            <div className=' xl:container xl:mx-auto md:mx-5 flex justify-start items-center p-4 h-[90vh] '>
+                <div className='text-white mt-[-330px] lg:mt-0 z-10'>
+                    <h1 className=' text-2xl md:text-3xl lg:text-5xl font-bold '>Welcome to <br /> <span className='text-[#D97706]'>  MS INTERNATIONAL </span><br /> <span className='text-[#D97706]'>PUBLIC SCHOOL</span> </h1>
+                    <p className='text-base lg:text-xl mt-2 md:mt-4 text-white'>" Viveka Vidhya Samsthe "</p>
                 </div>  
             </div>
         </div>
-        <div className=' absolute top-[10%] right-[10%]'>
-            <img src={kidImage} alt="" className=' mix-blend-normal w-[400px] '/>
+        <div className=' absolute top-[12%] lg:top-[20%] right-[-35px] md:right-[10px] lg:right-[20px] 2xl:right-[10%] z-10'>
+            <img src={kidImage} alt="" className=' mix-blend-normal w-[200px] lg:w-[400px] '/>
+        </div>
+        <div className=' p-4'>
+            <div className=' container mx-auto flex justify-evenly items-center gap-4 bg-[#f4f5ff] p-4 rounded'>
+              <div className=' flex flex-col justify-center items-center gap-2'>
+                <PiStudentFill className=' w-8 h-8 text-[#1E3A8A]'/>
+                <h3 className=' font-bold text-4xl'><CountUp start={1} end={450} duration={4}/>+</h3>
+                <p className=' font-semibold text-base'>Current Enrollment</p>
+              </div>
+              <div className=' flex flex-col justify-center items-center gap-2'>
+                <SiGoogleclassroom className=' w-8 h-8 text-[#0D9488]'/>
+                <h3 className=' font-bold text-4xl'><CountUp start={1} end={24} duration={4}/>+</h3>
+                <p className=' font-semibold text-base'>Current Classroom</p>
+              </div>
+              <div className=' flex flex-col justify-center items-center gap-2'>
+                <FaChalkboardTeacher className=' w-8 h-8 text-[#D97706]'/>
+                <h3 className=' font-bold text-4xl'><CountUp start={1} end={50} duration={4}/>+</h3>
+                <p className=' font-semibold text-base'>Qualified Teachers</p>
+              </div>
+            </div>
         </div>
     </div>
   )
