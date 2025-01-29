@@ -7,6 +7,30 @@ import CountUp from 'react-countup';
 
 
 function HeroSection() {
+  const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if(entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+     
+    if(containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if(containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    }
+  }, [])
 
   return (
     // bg-gradient-to-r from-[#0D9488] to-[#0891B2]
@@ -49,21 +73,27 @@ function HeroSection() {
         <div className=' absolute top-[12%] lg:top-[20%] right-[-35px] md:right-[10px] lg:right-[20px] 2xl:right-[10%] z-10'>
             <img src={kidImage} alt="" className=' mix-blend-normal w-[200px] lg:w-[400px] '/>
         </div>
-        <div className=' p-4'>
-            <div className=' container mx-auto flex justify-evenly items-center gap-4 bg-[#f4f5ff] p-4 rounded'>
-              <div className=' flex flex-col justify-center items-center gap-2'>
-                <PiStudentFill className=' w-8 h-8 text-[#1E3A8A]'/>
-                <h3 className=' font-bold text-4xl'><CountUp start={1} end={450} duration={4}/>+</h3>
+        <div className=' absolute top-[320px] left-0 right-0 lg:relative lg:top-0 xl:p-4' ref={containerRef}>
+            <div className=' container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-4 lg:gap-4 bg-[#f4f5ff] p-4 xl:rounded'>
+              <div className=' flex flex-col justify-center items-center gap-2 line-violet'>
+               <PiStudentFill className=' w-8 h-8 text-[#1E3A8A]'/>
+                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                  { isVisible && <CountUp start={1} end={450} duration={4}/>}+
+                  </h3>
                 <p className=' font-semibold text-base'>Current Enrollment</p>
               </div>
-              <div className=' flex flex-col justify-center items-center gap-2'>
+              <div className=' flex flex-col justify-center items-center gap-2 line-teal'>
                 <SiGoogleclassroom className=' w-8 h-8 text-[#0D9488]'/>
-                <h3 className=' font-bold text-4xl'><CountUp start={1} end={24} duration={4}/>+</h3>
+                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                  {isVisible && <CountUp start={1} end={24} duration={4}/>}+
+                  </h3>
                 <p className=' font-semibold text-base'>Current Classroom</p>
               </div>
-              <div className=' flex flex-col justify-center items-center gap-2'>
+              <div className=' flex flex-col justify-center items-center gap-2 line-gold'>
                 <FaChalkboardTeacher className=' w-8 h-8 text-[#D97706]'/>
-                <h3 className=' font-bold text-4xl'><CountUp start={1} end={50} duration={4}/>+</h3>
+                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                  {isVisible && <CountUp start={1} end={50} duration={4}/>}+
+                  </h3>
                 <p className=' font-semibold text-base'>Qualified Teachers</p>
               </div>
             </div>
