@@ -32,7 +32,6 @@ function HeroSection() {
   }, []);
 
   return (
-    // bg-gradient-to-r from-[#0D9488] to-[#0891B2]
 
     <div className=" relative animate-gradient bg-[length:400%_400%] overflow-hidden font-inter">
       <style>{`

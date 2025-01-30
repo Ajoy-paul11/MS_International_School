@@ -6,7 +6,7 @@ import secondarySchool from "../assets/secondary-student.jpg";
 
 function Programs() {
   return (
-    <div className=" p-4 my-4">
+    <div className=" p-8  bg-[#f4f5ff]">
       <h2 className=" text-[#1E3A8A] text-3xl lg:text-4xl text-center font-bold p-4 my-4">
         {" "}
         Programme Offered
