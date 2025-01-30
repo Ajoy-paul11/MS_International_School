@@ -35,7 +35,7 @@ function HeroSection() {
   return (
     // bg-gradient-to-r from-[#0D9488] to-[#0891B2]
 
-    <div className=' relative animate-gradient bg-[length:400%_400%] overflow-hidden'
+    <div className=' relative animate-gradient bg-[length:400%_400%] overflow-hidden font-inter'
     ><style>{`
         @keyframes gradient {
           0% {
@@ -65,7 +65,7 @@ function HeroSection() {
         <div>
             <div className=' xl:container xl:mx-auto md:mx-5 flex justify-start items-center p-4 h-[90vh] '>
                 <div className='text-white mt-[-330px] lg:mt-0 z-10'>
-                    <h1 className=' text-2xl md:text-3xl lg:text-5xl font-bold '>Welcome to <br /> <span className='text-[#D97706]'>  MS INTERNATIONAL </span><br /> <span className='text-[#D97706]'>PUBLIC SCHOOL</span> </h1>
+                    <h1 className=' text-2xl md:text-3xl lg:text-5xl xl:text-7xl font-bold '>Welcome to <br /> <span className='text-[#D97706]'>  MS INTERNATIONAL </span><br /> <span className='text-[#D97706]'>PUBLIC SCHOOL</span> </h1>
                     <p className='text-base lg:text-xl mt-2 md:mt-4 text-white'>" Viveka Vidhya Samsthe "</p>
                 </div>  
             </div>
@@ -77,21 +77,21 @@ function HeroSection() {
             <div className=' container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-4 lg:gap-4 bg-[#f4f5ff] p-4 xl:rounded'>
               <div className=' flex flex-col justify-center items-center gap-2 line-violet'>
                <PiStudentFill className=' w-8 h-8 text-[#1E3A8A]'/>
-                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                <h3 className=' font-bold text-2xl lg:text-4xl text-[#4B5563]'>
                   { isVisible && <CountUp start={1} end={450} duration={4}/>}+
                   </h3>
                 <p className=' font-semibold text-base'>Current Enrollment</p>
               </div>
               <div className=' flex flex-col justify-center items-center gap-2 line-teal'>
                 <SiGoogleclassroom className=' w-8 h-8 text-[#0D9488]'/>
-                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                <h3 className=' font-bold text-2xl lg:text-4xl text-[#4B5563]'>
                   {isVisible && <CountUp start={1} end={24} duration={4}/>}+
                   </h3>
                 <p className=' font-semibold text-base'>Current Classroom</p>
               </div>
               <div className=' flex flex-col justify-center items-center gap-2 line-gold'>
                 <FaChalkboardTeacher className=' w-8 h-8 text-[#D97706]'/>
-                <h3 className=' font-bold text-2xl lg:text-4xl'>
+                <h3 className=' font-bold text-2xl lg:text-4xl text-[#4B5563]'>
                   {isVisible && <CountUp start={1} end={50} duration={4}/>}+
                   </h3>
                 <p className=' font-semibold text-base'>Qualified Teachers</p>

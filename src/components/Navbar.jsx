@@ -30,7 +30,7 @@ function MobileNavItems(){
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className=' header-background '>
+    <div className=' header-background font-poppins'>
         <div className='  xl:container xl:mx-auto md:mx-5 flex justify-between items-center p-4 '>
             <div className=' rounded-full'>
                 <img src={msinternational} alt="school-logo" 
