@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 @layer base {
   :root {
@@ -123,5 +126,38 @@
 .line-gold:hover::after{
   /* background-color: #f4f5ff;
   transition: all 0.4s ease; */
+  background-position: 100% 0;
+}
+
+.pre-school{
+  background: linear-gradient(to right, #D97706 50%, #1E3A8A 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  transition: background-position 0.3s ease;
+}
+
+.pre-school:hover{
+  background-position: 100% 0;
+}
+
+.primary-school{
+  background: linear-gradient(to right, #D97706 50%, #0D9488 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  transition: background-position 0.3s ease;
+}
+
+.primary-school:hover{
+  background-position: 100% 0;
+}
+
+.secondary-school{
+  background: linear-gradient(to right, #D97706 50%, #4B5563 50%);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  transition: background-position 0.3s ease;
+}
+
+.secondary-school:hover{
   background-position: 100% 0;
 }
