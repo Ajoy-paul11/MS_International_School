@@ -3,7 +3,7 @@ import React from "react";
 function ProgramCard({ pic, phase, standard, classname, bgbutton }) {
   return (
     <div>
-      <div className=" w-[254px] xl:w-[284px] p-4 flex flex-col justify-center items-center gap-4 border bg-[#F3F4F6] rounded-tl-[40px] rounded-br-[40px] hover:rounded-tr-[40px] hover:rounded-bl-[40px] hover:rounded-tl-none hover:rounded-br-none duration-200 group">
+      <div className=" font-inter w-[254px] xl:w-[284px] p-4 flex flex-col justify-center items-center gap-4 border bg-[#F3F4F6] rounded-tl-[40px] rounded-br-[40px] hover:rounded-tr-[40px] hover:rounded-bl-[40px] hover:rounded-tl-none hover:rounded-br-none duration-200 group">
         <img
           src={pic}
           alt="school-kid"
