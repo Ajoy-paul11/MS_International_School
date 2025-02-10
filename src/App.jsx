@@ -14,7 +14,6 @@ function App() {
   return (
     <>
     <MantineProvider>
-
       <Navbar />
       <HeroSection />
       <About />
