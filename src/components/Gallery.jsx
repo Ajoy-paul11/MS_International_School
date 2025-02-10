@@ -27,8 +27,8 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null)
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4 xl:gap-6 2xl:gap-8">
         {images.map((image) => (
           <ImageCard key={image.id} image={image} onClick={() => setSelectedImage(image)} />
         ))}
