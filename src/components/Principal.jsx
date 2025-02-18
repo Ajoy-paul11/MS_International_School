@@ -1,6 +1,6 @@
 import React from "react";
 import bgImage from "../assets/bg-image.jpg";
-import chairman from "../assets/chairman.jpeg";
+import president from "../assets/president.jpeg";
 
 
 function Principal() {
@@ -26,7 +26,7 @@ function Principal() {
         </div>
         <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center p-8 lg:p-12">
             <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg lg:text-xl xl:text-3xl text-center font-bold">
-                <h3 className="my-2 text-3xl font-bold text-center relative top-[-15px] lg:top-[-50px]"> PRINCIPAL MESSAGE</h3>
+                <h3 className="my-2 text-3xl font-bold text-center relative top-[-15px] lg:top-[-50px]"> MESSAGE FROM WORKING PRESIDENT</h3>
               <p className="my-2 ">
                 We at MS International aim at inspiring our students to dream
                 more, learn more, do more, and become more in their respective
@@ -42,8 +42,8 @@ function Principal() {
             </div>
             <div className=" w-full lg:w-1/2 order-1 lg:order-2">
               <img
-                src={chairman}
-                alt="chairman-image"
+                src={president}
+                alt="president-image"
                 className=" h-[300px] lg:h-[450px] mx-auto rounded-md"
               />
             </div>

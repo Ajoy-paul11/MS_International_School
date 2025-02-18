@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "/principal",
+        path: "/governing-body",
         element: <Principal />
       },
       {

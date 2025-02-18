@@ -15,7 +15,7 @@ function Footer() {
               <div className=" flex flex-col justify-center items-start gap-4">
                 <h3 className="option font-semibold">About Us</h3>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link to={"/principal"} className=" hover:text-purple-700 duration-300">Principal</Link>
+                  <Link to={"/governing-body"} className=" hover:text-purple-700 duration-300">Governing Body</Link>
                   <Link to={"/overview"} className=" hover:text-purple-700 duration-300">Overview</Link>
                   <Link to={"/chairman"} className=" hover:text-purple-700 duration-300">Chairman</Link>
                   <Link to={"/faculty"} className=" hover:text-purple-700 duration-300">Faculty</Link>
