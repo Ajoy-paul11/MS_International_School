@@ -70,6 +70,15 @@ function Programme() {
               setOpenContent={setOpenContent}
               openContent={openContent}
             />
+            <ProgrammeCard
+              pic={secondarySchool}
+              phase={"Secondary School"}
+              standard={"VI - X"}
+              classname={"text-[#4B5563]"}
+              bgbutton={"secondary-school"}
+              setOpenContent={setOpenContent}
+              openContent={openContent}
+            />
           </div>
           <div className=" container mx-auto flex flex-col justify-evenly items-center gap-6 cta-text-color">
             {openContent && (
@@ -79,6 +88,9 @@ function Programme() {
                 </h3>
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold">
                   Primary Grade I-V
+                </h3>
+                <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold ">
+                  Secondary School VI- X
                 </h3>
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold ">
                   Secondary School VI- X
@@ -119,6 +131,16 @@ function Programme() {
                     <li type="circle">Honing life skills</li>
                     <li type="circle">Academic excellence</li>
                   </ul>
+                </div>
+                <div className=" w-[260px] xl:w-[290px] text-lg lg:text-xl">
+                  Our Primary classes focus on a hands-on, multi-disciplinary
+                  and multi-sensory instructional approach that focuses on
+                  nurturing our student’s creativity, imagination and
+                  interpersonal & social skills. Our teachers are able to
+                  maximize teaching & learning through one-on-one teaching to
+                  provide the best teaching to kids. These years are focused on
+                  inquiry and wonder, which are vital components of becoming
+                  life-long learners.
                 </div>
               </div>
             )}
@@ -168,6 +190,21 @@ function Programme() {
                   <li type="circle">Honing life skills</li>
                   <li type="circle">Academic excellence</li>
                 </ul>
+              </div>
+              <div className=" space-y-4">
+                <h3 className="  my-2 text-2xl font-bold ">
+                  Secondary School VI- X
+                </h3>
+                <div className=" text-lg lg:text-xl">
+                  Our Primary classes focus on a hands-on, multi-disciplinary
+                  and multi-sensory instructional approach that focuses on
+                  nurturing our student’s creativity, imagination and
+                  interpersonal & social skills. Our teachers are able to
+                  maximize teaching & learning through one-on-one teaching to
+                  provide the best teaching to kids. These years are focused on
+                  inquiry and wonder, which are vital components of becoming
+                  life-long learners.
+                </div>
               </div>
             </div>
           </div>

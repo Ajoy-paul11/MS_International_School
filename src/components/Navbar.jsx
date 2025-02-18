@@ -66,7 +66,7 @@ function Navbar() {
   const navItems = [
     {
       title: "About Us",
-      dropdownItems: ["Governing Body", "Overview", "Chairman", "Faculty"],
+      dropdownItems: ["Overview", "Governing Body", "Chairman", "Faculty"],
     },
     { title: "Facilities" },
     { title: "Programme" },

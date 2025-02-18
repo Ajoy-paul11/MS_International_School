@@ -17,7 +17,7 @@ function Principal() {
               <div className=" flex justify-center items-center gap-4">
                 <div className="w-2 h-10 cta-color"></div>
                 <h2 className=" text-2xl xl:text-3xl cta-text-color font-bold">
-                  PRINCIPAL
+                  GOVERNING BODY
                 </h2>
               </div>
             </div>
