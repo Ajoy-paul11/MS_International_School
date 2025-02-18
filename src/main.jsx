@@ -17,6 +17,7 @@ import ScienceEvent from "./components/ScienceEvent";
 import Independence from "./components/Independence";
 import CulturalEvent from "./components/CulturalEvent";
 import Hostel from "./components/Hostel";
+import OtherSchoolEvent from "./components/OtherSchoolEvent";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "/cultural-event",
         element: <CulturalEvent />
+      },
+      {
+        path: "/other-school-event",
+        element: <OtherSchoolEvent />
       },
       {
         path: "/hostel",

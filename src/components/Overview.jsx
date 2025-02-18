@@ -1,6 +1,7 @@
 import React from "react";
 import bgImage from "../assets/bg-image.jpg";
 import overviewImage from "../assets/overview-image.jpg";
+import { AspectRatio } from "@mantine/core";
 
 function Overview() {
   return (
@@ -22,7 +23,7 @@ function Overview() {
             </div>
           </div>
         </div>
-        <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center p-8 lg:px-4 xl:p-12">
+        <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center p-8 px-2 md:px-0 lg:px-4 xl:p-12">
           <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg lg:text-xl xl:text-2xl text-center font-bold">
             <p className="my-2 ">
               MS International Public School. The only school in Mandya to
@@ -48,6 +49,23 @@ function Overview() {
             />
           </div>
         </div>
+        <div className=" primary-text-color py-8 lg:py-12 bg-color">
+          <h3 className=" my-2 text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-8 lg:mb-12">
+            Life at MS International Public School
+          </h3>
+          <div className=" px-4 max-w-3xl mx-auto">
+            <AspectRatio ratio={16 / 9}>
+              <iframe
+                src="https://www.youtube.com/embed/XkvMDB2_FG8?si=L9xWxOmc5JeRQPzd"
+                title="YouTube video player"
+                style={{ border: 0, borderRadius: "12px" }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </AspectRatio>
+          </div>
+        </div>
+        <hr className=" border-color"/>
       </div>
     </div>
   );

@@ -15,19 +15,19 @@ function Footer() {
               <div className=" flex flex-col justify-center items-start gap-4">
                 <h3 className="option font-semibold">About Us</h3>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link className=" hover:text-purple-700 duration-300">Principal</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Overview</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Chairman</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Faculty</Link>
+                  <Link to={"/principal"} className=" hover:text-purple-700 duration-300">Principal</Link>
+                  <Link to={"/overview"} className=" hover:text-purple-700 duration-300">Overview</Link>
+                  <Link to={"/chairman"} className=" hover:text-purple-700 duration-300">Chairman</Link>
+                  <Link to={"/faculty"} className=" hover:text-purple-700 duration-300">Faculty</Link>
                 </div>
               </div>
               <div className=" flex flex-col justify-center items-start gap-4">
                 <h3 className="option font-semibold">Know Us</h3>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link className=" hover:text-purple-700 duration-300">Facilities</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Programme</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Gallery</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Hostel</Link>
+                  <Link to={"/facilities"} className=" hover:text-purple-700 duration-300">Facilities</Link>
+                  <Link to={"/programme"} className=" hover:text-purple-700 duration-300">Programme</Link>
+                  <Link to={"/gallery"} className=" hover:text-purple-700 duration-300">Gallery</Link>
+                  <Link to={"/hostel"} className=" hover:text-purple-700 duration-300">Hostel</Link>
                 </div>
               </div>
               <div className=" flex flex-col justify-center items-startstart gap-4">
@@ -35,17 +35,16 @@ function Footer() {
                 <h3 className="option line font-semibold">Event</h3>
                 </div>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link className=" hover:text-purple-700 duration-300">Science Event</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Independence Day</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Cultural Event</Link>
-                  <Link className=" hover:text-purple-700 duration-300">Other Event</Link>
+                  <Link to={"/science-event"} className=" hover:text-purple-700 duration-300">Science Event</Link>
+                  <Link to={"/independence-day"} className=" hover:text-purple-700 duration-300">Independence Day</Link>
+                  <Link to={"/cultural-event"} className=" hover:text-purple-700 duration-300">Cultural Event</Link>
+                  <Link to={"/other-school-event"} className=" hover:text-purple-700 duration-300">Other Event</Link>
                 </div>
               </div>
             </div>
-            <div className=" w-[400px] xl:w-[600px] mx-auto">
+            <div className=" w-full md:w-[400px] xl:w-[600px] mx-auto">
               <AspectRatio ratio={16 / 9}>
                 <iframe
-                  //   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3063874233135!2d-74.04668908358428!3d40.68924937933441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty%20National%20Monument!5e0!3m2!1sen!2sru!4v1644262070010!5m2!1sen!2sru"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.176631015468!2d76.97578667506961!3d12.57060218770915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafa66e0fffffff%3A0x31071de2eaf4d70d!2sMS%20International%20Public%20School!5e0!3m2!1sen!2sin!4v1739625769885!5m2!1sen!2sin"
                   title="Google map"
                   style={{ border: 0, borderRadius: "10px" }}
