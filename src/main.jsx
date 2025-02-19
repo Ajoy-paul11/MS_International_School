@@ -18,6 +18,7 @@ import Independence from "./components/Independence";
 import CulturalEvent from "./components/CulturalEvent";
 import Hostel from "./components/Hostel";
 import OtherSchoolEvent from "./components/OtherSchoolEvent";
+import Admission from "./components/Admission";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "/hostel",
         element: <Hostel />
+      },
+      {
+        path: "/admission",
+        element: <Admission />
       }
     ]
   },
@@ -81,7 +86,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <MantineProvider>
       <RouterProvider router={router}>
-
       </RouterProvider>
     </MantineProvider>
   </StrictMode>

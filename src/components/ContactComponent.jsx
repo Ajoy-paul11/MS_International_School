@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Fieldset } from "@mantine/core";
 import { Input } from "@mantine/core";
 import { Textarea } from "@mantine/core";
+import { toast } from "react-toastify";
 
 export default function ContactComponent() {
   const {
