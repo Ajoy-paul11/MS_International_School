@@ -42,7 +42,7 @@ function Programme() {
               </p>
             </p>
           </div>
-          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-6 ">
+          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-6 lg:grid grid-cols-2 place-items-center xl:flex">
             <ProgrammeCard
               pic={preSchool}
               phase={"Pre-School"}
@@ -72,8 +72,8 @@ function Programme() {
             />
             <ProgrammeCard
               pic={secondarySchool}
-              phase={"Secondary School"}
-              standard={"VI - X"}
+              phase={"IT and Skills"}
+              standard={"Course"}
               classname={"text-[#4B5563]"}
               bgbutton={"secondary-school"}
               setOpenContent={setOpenContent}
@@ -82,7 +82,7 @@ function Programme() {
           </div>
           <div className=" container mx-auto flex flex-col justify-evenly items-center gap-6 cta-text-color">
             {openContent && (
-              <div className=" hidden lg:flex w-full gap-6 justify-evenly">
+              <div className=" hidden xl:flex w-full gap-6 justify-evenly ">
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold ">
                   Our Pre-School is a Celebration Of Childhood
                 </h3>
@@ -93,12 +93,12 @@ function Programme() {
                   Secondary School VI- X
                 </h3>
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold ">
-                  Secondary School VI- X
+                  IT and Skills
                 </h3>
               </div>
             )}
             {openContent && (
-              <div className=" hidden lg:flex w-full gap-6 justify-evenly">
+              <div className=" hidden xl:flex w-full gap-6 justify-evenly ">
                 <div className=" w-[260px] xl:w-[290px] text-lg lg:text-xl">
                   Our LKG & UKG classrooms inspire awe and wonder and equate
                   learning with a sense of magic and freedom. We believe that
@@ -143,6 +143,71 @@ function Programme() {
                   life-long learners.
                 </div>
               </div>
+            )}
+            {openContent && (
+              <div className=" sm:hidden lg:grid grid-cols-2 gap-6 gap-x-64 xl:hidden">
+              <div className=" space-y-4  w-[265px]">
+                <h3 className=" my-2 text-2xl font-bold ">
+                  Our Pre-School is a Celebration Of Childhood
+                </h3>
+                <div className=" text-lg lg:text-xl">
+                  Our LKG & UKG classrooms inspire awe and wonder and equate
+                  learning with a sense of magic and freedom. We believe that
+                  children are not just empty vessels to be filled with facts.
+                  They are extraordinary humans capable of understanding complex
+                  ideas. We do not water down for academics but rather present a
+                  rich feast of ideas.
+                </div>
+              </div>
+              <div className=" space-y-4  w-[265px]">
+                <h3 className="  my-2 text-2xl font-bold ">
+                  Secondary School VI- X
+                </h3>
+                <div className=" text-lg lg:text-xl">
+                  Our Primary classes focus on a hands-on, multi-disciplinary
+                  and multi-sensory instructional approach that focuses on
+                  nurturing our student’s creativity, imagination and
+                  interpersonal & social skills. Our teachers are able to
+                  maximize teaching & learning through one-on-one teaching to
+                  provide the best teaching to kids. These years are focused on
+                  inquiry and wonder, which are vital components of becoming
+                  life-long learners.
+                </div>
+              </div>
+              <div className=" space-y-4  w-[265px]">
+                <h3 className=" my-2 text-2xl font-bold ">
+                  Secondary School VI- X
+                </h3>
+                <ul className=" text-lg lg:text-xl">
+                  <li type="circle">
+                    Empowering Children with the confidence to face the future
+                  </li>
+                  <li type="circle">Physical and mental fitness training</li>
+                  <li type="circle">Society related activity</li>
+                  <li type="circle">Parental involvement</li>
+                  <li type="circle">Etiquette grooming</li>
+                  <li type="circle">Quality knowledge management</li>
+                  <li type="circle">Training in Journalism</li>
+                  <li type="circle">Honing life skills</li>
+                  <li type="circle">Academic excellence</li>
+                </ul>
+              </div>
+              <div className=" space-y-4  w-[265px]">
+                <h3 className="  my-2 text-2xl font-bold ">
+                 IT and Skills
+                </h3>
+                <div className=" text-lg lg:text-xl">
+                  Our Primary classes focus on a hands-on, multi-disciplinary
+                  and multi-sensory instructional approach that focuses on
+                  nurturing our student’s creativity, imagination and
+                  interpersonal & social skills. Our teachers are able to
+                  maximize teaching & learning through one-on-one teaching to
+                  provide the best teaching to kids. These years are focused on
+                  inquiry and wonder, which are vital components of becoming
+                  life-long learners.
+                </div>
+              </div>
+            </div>
             )}
             <div className=" lg:hidden flex flex-col gap-6">
               <div className=" space-y-4">
@@ -193,7 +258,7 @@ function Programme() {
               </div>
               <div className=" space-y-4">
                 <h3 className="  my-2 text-2xl font-bold ">
-                  Secondary School VI- X
+                  IT and Skills
                 </h3>
                 <div className=" text-lg lg:text-xl">
                   Our Primary classes focus on a hands-on, multi-disciplinary
