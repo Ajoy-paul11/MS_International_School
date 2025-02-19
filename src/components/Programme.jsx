@@ -5,6 +5,7 @@ import ProgrammeCard from "./ProgrammeCard";
 import preSchool from "../assets/programme/pre-school-kid.jpg";
 import primarySchool from "../assets/programme/primary-kid.jpg";
 import secondarySchool from "../assets/programme/secondary-student.jpg";
+import ITSkills from "../assets/programme/skill-course.jpg";
 
 function Programme() {
   const [openContent, setOpenContent] = useState(false);
@@ -71,11 +72,11 @@ function Programme() {
               openContent={openContent}
             />
             <ProgrammeCard
-              pic={secondarySchool}
+              pic={ITSkills}
               phase={"IT and Skills"}
               standard={"Course"}
-              classname={"text-[#4B5563]"}
-              bgbutton={"secondary-school"}
+              classname={"text-[#7C3AED]"}
+              bgbutton={"skill-course"}
               setOpenContent={setOpenContent}
               openContent={openContent}
             />
