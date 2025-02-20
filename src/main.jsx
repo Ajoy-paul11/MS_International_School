@@ -19,6 +19,7 @@ import CulturalEvent from "./components/CulturalEvent";
 import Hostel from "./components/Hostel";
 import OtherSchoolEvent from "./components/OtherSchoolEvent";
 import Admission from "./components/Admission";
+import Award from "./components/Award";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,10 @@ const router = createBrowserRouter([
       {
         path: "/hostel",
         element: <Hostel />
+      },
+      {
+        path: "/award",
+        element: <Award />
       },
       {
         path: "/admission",

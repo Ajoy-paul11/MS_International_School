@@ -79,7 +79,7 @@ function Navbar() {
         "Other School Event",
       ],
     },
-    { title: "Gallery" },
+    { title: "Award" },
     { title: "Hostel" },
     { title: "Admission", isAdmission: true },
   ];

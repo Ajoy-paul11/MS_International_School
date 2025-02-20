@@ -26,7 +26,7 @@ function Footer() {
                 <div className=" flex flex-col gap-2 lg:gap-4">
                   <Link to={"/facilities"} className=" hover:text-purple-700 duration-300">Facilities</Link>
                   <Link to={"/programme"} className=" hover:text-purple-700 duration-300">Programme</Link>
-                  <Link to={"/gallery"} className=" hover:text-purple-700 duration-300">Gallery</Link>
+                  <Link to={"/award"} className=" hover:text-purple-700 duration-300">Award</Link>
                   <Link to={"/hostel"} className=" hover:text-purple-700 duration-300">Hostel</Link>
                 </div>
               </div>
