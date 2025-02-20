@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image2.png";
+import bgImage from "../assets/other-event-bg.jpeg";
 import event1 from "../assets/otherevent/event1.jpg";
 import event2 from "../assets/otherevent/event2.jpg";
 import event3 from "../assets/otherevent/event3.jpg";
@@ -17,10 +17,10 @@ function OtherSchoolEvent() {
       <div>
         <div
           className=" w-full h-[245px] bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          style={{ backgroundImage: `url(${bgImage})`}}
         >
           {/* Background black effect */}
-          <div className=" w-full h-full bg-black/50">
+          <div className=" w-full h-full bg-black/60">
             <div className=" absolute top-[120px] w-full">
               <div className=" flex justify-center items-center gap-4">
                 <div className="w-2 h-10 cta-color"></div>

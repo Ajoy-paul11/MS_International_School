@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image2.png";
+import bgImage from "../assets/cultural-bg.jpeg";
 import cultureImage1 from "../assets/culturealevent/cultural1.jpg";
 import cultureImage2 from "../assets/culturealevent/cultural2.jpg";
 import cultureImage3 from "../assets/culturealevent/cultural3.jpg";
@@ -22,7 +22,7 @@ function CulturalEvent() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           {/* Background black effect */}
-          <div className=" w-full h-full bg-black/50">
+          <div className=" w-full h-full bg-black/60">
             <div className=" absolute top-[120px] w-full">
               <div className=" flex justify-center items-center gap-4">
                 <div className="w-2 h-10 cta-color"></div>
