@@ -11,28 +11,6 @@ import image8 from "../assets/gallery/image8.jpg";
 import image9 from "../assets/gallery/image9.jpg";
 
 
-const ImageCard = ({ src, alt }) => {
-  return (
-    // <Tilt className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out cursor-pointer glass-effect">
-    //   <img
-    //     title="Click to see more"
-    //     src={src}
-    //     alt={alt}
-    //     className=""
-    // className=" absolute top-0 left-0 w-full h-full object-cover"
-    // />
-    {
-      /* <div className=" w-full h-full pt-[100%] relative overflow-hidden">
-        <img
-          src={src}
-          alt={alt}
-          className=" absolute top-0 left-0 w-full h-full object-cover"
-        />
-      </div> */
-    }
-    // </Tilt>
-  );
-};
 function GallerySection() {
   return (
     <div className=" py-8 xl:py-12">
@@ -43,9 +21,6 @@ function GallerySection() {
       </div>
       {/* <div className=" grid grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-4 p-4"> */}
       <div className="  bg-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 p-8 lg:px-12 xl:px-16 ">
-        {/* {images.map((image, index) => (
-            <ImageCard key={index} src={image} alt={"event-image"} />
-          ))} */}
         <Tilt className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-in-out cursor-pointer glass-effect classroom">
           <img title="Click to see more" src={image1} alt="alt" className="" />
         </Tilt>
