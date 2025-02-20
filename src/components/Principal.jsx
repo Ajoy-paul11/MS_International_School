@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image2.png";
+import bgImage from "../assets/governing-bg.jpeg";
 import president from "../assets/president.jpeg";
 
 
@@ -8,8 +8,8 @@ function Principal() {
     <div>
       <div>
         <div
-          className=" w-full h-[245px] bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${bgImage})` }}
+          className=" w-full h-[245px] bg-cover bg-no-repeat"
+          style={{ backgroundImage: `url(${bgImage})` , backgroundPosition: "top center" }}
         >
           {/* Background black effect */}
           <div className=" w-full h-full bg-black/60">

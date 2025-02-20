@@ -4,6 +4,8 @@ import { Link } from "react-router";
 import { FaWpforms } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "../assets/MS-Logo.png";
+
+
 function NavItem({ title, dropdownItems, isAdmission }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,17 +24,16 @@ function NavItem({ title, dropdownItems, isAdmission }) {
           {title}
         </Link>
       ) : dropdownItems ? (
-        <Link className="px-4 lg:px-1 xl:px-4 py-2 primary-text-color font-bold hover:primary-text-color/80 flex items-center">
+        <div className="px-4 lg:px-1 xl:px-4 py-2 primary-text-color font-bold hover:primary-text-color/80 flex items-center">
           {title}
           {dropdownItems && <RiArrowDropDownLine className="h-6 w-6" />}
-        </Link>
+        </div>
       ) : (
         <Link
           to={title.toLowerCase()}
           className="px-4 lg:px-1 xl:px-4 py-2 primary-text-color font-bold hover:primary-text-color/80 flex items-center"
         >
           {title}
-          {/* {dropdownItems && <RiArrowDropDownLine className="h-6 w-6" />} */}
         </Link>
       )}
 

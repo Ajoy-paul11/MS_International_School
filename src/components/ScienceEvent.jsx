@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image.jpg";
+import bgImage from "../assets/science-bg.png";
 import scienceEvent1 from "../assets/scienceday/science-day1.jpg";
 import scienceEvent2 from "../assets/scienceday/science-day2.jpg";
 import scienceEvent3 from "../assets/scienceday/science-day3.jpg";
@@ -22,7 +22,7 @@ function ScienceEvent() {
           style={{ backgroundImage: `url(${bgImage})` }}
         >
           {/* Background black effect */}
-          <div className=" w-full h-full bg-black/50">
+          <div className=" w-full h-full bg-black/60">
             <div className=" absolute top-[120px] w-full">
               <div className=" flex justify-center items-center gap-4">
                 <div className="w-2 h-10 cta-color"></div>
