@@ -8,6 +8,8 @@ import hostel5 from "../assets/hostel/hostel5.jpeg";
 import kitchen1 from "../assets/hostel/kitchen1.jpeg";
 import kitchen2 from "../assets/hostel/kitchen2.jpeg";
 import kitchen3 from "../assets/hostel/kitchen3.jpeg";
+import kitchen4 from "../assets/hostel/kitchen4.jpeg";
+import kitchen5 from "../assets/hostel/kitchen5.jpeg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -107,6 +109,20 @@ function Hostel() {
                 <div>
                   <img
                     src={kitchen3}
+                    alt="kitchen-image"
+                    className="rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={kitchen4}
+                    alt="kitchen-image"
+                    className="rounded-lg"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={kitchen5}
                     alt="kitchen-image"
                     className="rounded-lg"
                   />

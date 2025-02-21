@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image.jpg";
+import bgImage from "../assets/overview-bg.jpeg";
 import overviewImage from "../assets/overview-image.jpg";
 import { AspectRatio } from "@mantine/core";
 

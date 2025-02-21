@@ -6,6 +6,8 @@ import award3 from "../assets/award/award3.jpg";
 import award4 from "../assets/award/award4.jpg";
 import award5 from "../assets/award/award5.jpg";
 import award6 from "../assets/award/award6.jpg";
+import award7 from "../assets/award/award7.jpeg";
+import award8 from "../assets/award/award8.jpeg";
 
 
 function Award() {
@@ -47,6 +49,12 @@ function Award() {
           </div>
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <img src={award6} alt="science-day-image" className="" />
+          </div>
+          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
+            <img src={award7} alt="science-day-image" className="" />
+          </div>
+          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
+            <img src={award8} alt="science-day-image" className="" />
           </div>
         </div>
         <hr className=" border-color"/>
