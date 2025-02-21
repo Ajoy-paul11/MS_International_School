@@ -5,54 +5,55 @@ import { Input } from "@mantine/core";
 import { Textarea } from "@mantine/core";
 import bgImage from "../assets/bg-image2.png";
 import { toast } from "react-toastify";
+import Marquee from "react-fast-marquee";
+import Tagline from "./Tagline";
 
 function Admission() {
-    const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors },
-      } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-      const [isSubmitting, setIsSubmitting] = useState(false);
-    
-      const onSubmit = async (data) => {
-        
-        try {
-          setIsSubmitting(true);
-          const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-    
-          const result = await response.json();
-    
-          if (result.success) {
-            // Push the form submission event to dataLayer
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-              event: "form_submission",
-              formId: "admission_form",
-            });
-    
-            toast.success("Message sent Successfully");
-    
-            await gtag_report_conversion();
-    
-            reset();
-          } else {
-            toast.error(result.message || "Failed to send message");
-          }
-        } catch (error) {
-          toast.error(error.message || "Internal Server Error, Please try again!");
-        } finally {
-          setIsSubmitting(false);
-        }
-      };
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (data) => {
+    try {
+      setIsSubmitting(true);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Push the form submission event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_submission",
+          formId: "admission_form",
+        });
+
+        toast.success("Message sent Successfully");
+
+        await gtag_report_conversion();
+
+        reset();
+      } else {
+        toast.error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      toast.error(error.message || "Internal Server Error, Please try again!");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div>
@@ -72,6 +73,12 @@ function Admission() {
               </div>
             </div>
           </div>
+        </div>
+        <div className=" w-full cta-color rounded-sm py-2 px-2">
+          <Marquee className=" text-white font-semibold text-xl">
+            <Tagline />
+            <Tagline />
+          </Marquee>
         </div>
         <div className=" max-w-3xl mx-auto py-12 px-4">
           <div className="w-full bg-color primary-text-color p-6 rounded-lg shadow-md">

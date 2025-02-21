@@ -1,6 +1,5 @@
 import React from "react";
-import bgImage from "../assets/bg-image.jpg";
-import inde1 from "../assets/independenceday/inde1.jpeg";
+import bgImage from "../assets/independence-bg.jpeg";
 import inde2 from "../assets/independenceday/inde2.jpeg";
 import inde3 from "../assets/independenceday/inde3.jpeg";
 import inde4 from "../assets/independenceday/inde4.jpeg";
@@ -63,9 +62,6 @@ function Independence() {
           </div>
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <img src={inde10} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde1} alt="science-day-image" className="" />
           </div>
         </div>
         <hr className=" border-color"/>
