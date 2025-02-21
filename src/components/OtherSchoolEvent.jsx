@@ -9,8 +9,10 @@ import event6 from "../assets/otherevent/event6.jpg";
 import event7 from "../assets/otherevent/event7.jpg";
 import event8 from "../assets/otherevent/event8.jpg";
 import event9 from "../assets/otherevent/event9.jpeg";
-import event10 from "../assets/otherevent/event10.jpeg";
+// import event10 from "../assets/otherevent/event10.jpeg";
 import event11 from "../assets/otherevent/event11.jpeg";
+import event12 from "../assets/otherevent/event12.jpeg";
+import event13 from "../assets/otherevent/event13.jpeg";
 
 function OtherSchoolEvent() {
   return (
@@ -61,11 +63,17 @@ function OtherSchoolEvent() {
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <img src={event9} alt="event-image" className="" />
           </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
+          {/* <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <img src={event10} alt="event-image" className="" />
-          </div>
+          </div> */}
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] flex items-center">
             <img src={event11} alt="event-image" className="" />
+          </div>
+          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] flex items-center">
+            <img src={event12} alt="event-image" className="" />
+          </div>
+          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] flex items-center">
+            <img src={event13} alt="event-image" className="" />
           </div>
         </div>
         <hr className=" border-color" />
