@@ -4,22 +4,21 @@ import "./index.css";
 import App from "./App.jsx";
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-import { BrowserRouter } from "react-router";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Home from "./components/Home";
-import Principal from "./components/Principal";
-import Chairman from "./components/Chairman";
-import Overview from "./components/Overview";
-import Faculty from "./components/Faculty";
-import Facility from "./components/Facility";
-import Programme from "./components/Programme";
-import ScienceEvent from "./components/ScienceEvent";
-import Independence from "./components/Independence";
-import CulturalEvent from "./components/CulturalEvent";
-import Hostel from "./components/Hostel";
-import OtherSchoolEvent from "./components/OtherSchoolEvent";
-import Admission from "./components/Admission";
-import Award from "./components/Award";
+import Home from "./components/Home.jsx";
+import Principal from "./components/Principal.jsx";
+import Chairman from "./components/Chairman.jsx";
+import Overview from "./components/Overview.jsx";
+import Faculty from "./components/Faculty.jsx";
+import Facility from "./components/Facility.jsx";
+import Programme from "./components/Programme.jsx";
+import ScienceEvent from "./components/ScienceEvent.jsx";
+import Independence from "./components/Independence.jsx";
+import CulturalEvent from "./components/CulturalEvent.jsx";
+import Hostel from "./components/Hostel.jsx";
+import OtherSchoolEvent from "./components/OtherSchoolEvent.jsx";
+import Admission from "./components/Admission.jsx";
+import Award from "./components/Award.jsx";
 
 const router = createBrowserRouter([
   {

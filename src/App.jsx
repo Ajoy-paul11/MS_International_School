@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
 import { Outlet } from 'react-router';
-import Footer from './components/Footer';
+import Footer from './components/Footer.jsx';
 import { ToastContainer } from "react-toastify";
 
 

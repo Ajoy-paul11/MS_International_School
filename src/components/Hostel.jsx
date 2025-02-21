@@ -21,7 +21,7 @@ function Hostel() {
             </div>
           </div>
         </div>
-        <div>
+                <div>
             {/* Images would come */}
         </div>
       </div>

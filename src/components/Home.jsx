@@ -1,11 +1,11 @@
 import React from 'react'
-import HeroSection from './HeroSection';
-import CountSection from './CountSection';
-import AboutSection from './AboutSection';
-import ChairmanSection from './ChairmanSection';
-import ProgrammeSection from './ProgrammeSection';
-import GallerySection from './GallerySection';
-import ContactComponent from './ContactComponent';
+import HeroSection from './HeroSection.jsx';
+import CountSection from './CountSection.jsx';
+import AboutSection from './AboutSection.jsx';
+import ChairmanSection from './ChairmanSection.jsx';
+import ProgrammeSection from './ProgrammeSection.jsx';
+import GallerySection from './GallerySection.jsx';
+import ContactComponent from './ContactComponent.jsx';
 
 function Home() {
   return (
