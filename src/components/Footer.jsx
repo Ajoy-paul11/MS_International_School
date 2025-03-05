@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import { AspectRatio } from "@mantine/core";
 import { FaYoutube } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { SiInstagram } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa";
 
 function Footer() {
@@ -59,24 +59,24 @@ function Footer() {
               <br className=" block md:hidden"/> All rights reserved.
             </div>
             <div className=" flex gap-4 primary-text-color">
-              <Link className=" hover:text-purple-700 duration-300 text-base">Disclaimer</Link>
-              <Link className=" hover:text-purple-700 duration-300 text-base">T&C</Link>
+              <Link to="/disclaimer" className=" hover:text-purple-700 duration-300 text-base">Disclaimer</Link>
+              <Link to="/terms-and-conditions" className=" hover:text-purple-700 duration-300 text-base">T&C</Link>
               <Link className=" hover:text-purple-700 duration-300 text-base">Privacy Policy</Link>
             </div>
             <div className=" flex gap-4">
               <div>
-                <Link>
+                <Link to={"https://www.youtube.com/@msinternationalpublicschoo8296"} target="_blank">
                   <FaYoutube className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>
               <div>
-                <Link>
-                  <FaLinkedin className=" w-6 h-6 primary-text-color" />
+                <Link to={"https://www.facebook.com/p/MS-International-Public-School-100083362081406/"} target="_blank">
+                  <FaFacebook className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>
               <div>
-                <Link>
-                  <FaFacebook className=" w-6 h-6 primary-text-color" />
+                <Link to={"https://www.instagram.com/ms_international_public_school/"} target="_blank">
+                  <SiInstagram className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>
             </div>

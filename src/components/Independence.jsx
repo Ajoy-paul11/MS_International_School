@@ -70,7 +70,7 @@ function Independence() {
             <img src={inde10} alt="science-day-image" className="" />
           </div>
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde1} alt="science-day-image" className="" />
+            <img src={inde11} alt="science-day-image" className="" />
           </div>
           <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
             <img src={inde12} alt="science-day-image" className="" />

@@ -19,6 +19,8 @@ import Hostel from "./components/Hostel.jsx";
 import OtherSchoolEvent from "./components/OtherSchoolEvent.jsx";
 import Admission from "./components/Admission.jsx";
 import Award from "./components/Award.jsx";
+import Disclaimer from "./components/Disclaimer";
+import Terms from "./components/Terms";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +82,14 @@ const router = createBrowserRouter([
       {
         path: "/admission",
         element: <Admission />
+      },
+      {
+        path: "/disclaimer",
+        element: <Disclaimer />
+      },
+      {
+        path: "/terms-and-conditions",
+        element: <Terms />
       }
     ]
   },
