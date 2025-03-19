@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTop from './ScrollToTop'
 
 function Disclaimer() {
     const info = [
@@ -29,6 +30,7 @@ function Disclaimer() {
       ];
   return (
     <section>
+      <ScrollToTop />
       <div className="container mx-auto px-8 py-12 text-black">
         <div className="my-4">
           <h1 className="text-4xl font-semibold text-center mb-6">Disclaimer</h1>

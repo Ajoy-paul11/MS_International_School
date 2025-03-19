@@ -83,7 +83,7 @@ function HeroSection() {
           <FaArrowDown className="h-4 lg:h-5 w-4 lg:w-5 text-white" />
         </button>
       </div>
-      <div className="absolute top-[15%] right-6 z-10 w-[360px]">
+      <div className="hidden lg:block absolute top-8 xl:top-[15%] right-6 z-10 w-[300px] xl:w-[360px]">
         <Form />
       </div>
     </div>

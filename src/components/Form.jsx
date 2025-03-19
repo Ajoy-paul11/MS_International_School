@@ -52,7 +52,7 @@ function Form() {
       };
 
   return (
-    <div className=" hidden lg:block w-full bg-color primary-text-color p-6 rounded-lg shadow-md">
+    <div className=" w-full bg-color primary-text-color p-6 rounded-lg shadow-md">
       <h2 className="  text-center text-xl lg:text-3xl font-bold mb-4">
         Contact Us
       </h2>
