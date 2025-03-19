@@ -42,8 +42,6 @@ function Admission() {
 
         toast.success("Message sent Successfully");
 
-        await gtag_report_conversion();
-
         reset();
       } else {
         toast.error(result.message || "Failed to send message");
