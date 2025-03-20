@@ -1,11 +1,12 @@
 import React from 'react'
-import HeroSection from './HeroSection.jsx';
-import CountSection from './CountSection.jsx';
-import AboutSection from './AboutSection.jsx';
-import ChairmanSection from './ChairmanSection.jsx';
-import ProgrammeSection from './ProgrammeSection.jsx';
-import GallerySection from './GallerySection.jsx';
+const HeroSection = React.lazy(() => import("./HeroSection.jsx"));
+const CountSection = React.lazy(() => import("./CountSection.jsx"));
+const AboutSection = React.lazy(() => import("./AboutSection.jsx"));
+const ChairmanSection = React.lazy(() => import("./ChairmanSection.jsx"));
+const ProgrammeSection = React.lazy(() => import("./ProgrammeSection.jsx"));
+const GallerySection = React.lazy(() => import("./GallerySection.jsx"));
 import ContactComponent from './ContactComponent.jsx';
+import ScrollToTop from './ScrollToTop.jsx';
 
 function Home() {
   return (

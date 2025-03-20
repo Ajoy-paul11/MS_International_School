@@ -1,5 +1,5 @@
 import React from "react";
-import schoolView from "../assets/top-view.png";
+import schoolView from "../assets/top-view.webp";
 import logo from "../assets/Logo-02.png";
 
 function AboutSection() {

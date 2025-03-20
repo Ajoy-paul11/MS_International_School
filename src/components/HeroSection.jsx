@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import banner1 from "../assets/banner/banner1.jpg";
-import banner2 from "../assets/banner/banner2.jpg";
-import banner3 from "../assets/banner/banner3.jpg";
+import banner1 from "../assets/banner/banner1.webp";
+import banner2 from "../assets/banner/banner2.webp";
+import banner3 from "../assets/banner/banner3.webp";
 import { FaArrowUp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -89,11 +89,18 @@ function HeroSection() {
             key={index}
             className={`w-full h-full flex-shrink-0 `}
           >
+            <picture>
+              <source srcSet={`${image}?w=480`} media="(max-width: 480px)"/>
+              <source srcSet={`${image}?w=768`} media="(max-width: 768px)"/>
+              <source srcSet={`${image}?w=1024`} media="(min-width: 769px)"/>
+              <source srcSet={`${image}?w=1280`} media="(min-width: 1025px)"/>
             <img
               src={image || "/placeholder.svg"}
+              loading="lazy"
               alt={`Slide ${index + 1}`}
               className="w-full h-full object-contain"
-            />
+              />
+            </picture>
           </div>
         ))}
       </div>
