@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import banner1 from "../assets/banner/banner1.webp";
-import banner2 from "../assets/banner/banner2.webp";
-import banner3 from "../assets/banner/banner3.webp";
+// import banner1 from "../assets/banner/banner1.webp";
+// import banner2 from "../assets/banner/banner2.webp";
+// import banner3 from "../assets/banner/banner3.webp";
 import { FaArrowUp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -12,9 +12,9 @@ function HeroSection() {
   const [isOpen, setIsOpen] = useState(false);
 
   const images = [
-    banner1,
-    banner2,
-    banner3
+   "https://ik.imagekit.io/ajoy/banner/banner1.webp?updatedAt=1742536811478",
+    "https://ik.imagekit.io/ajoy/banner/banner2.webp?updatedAt=1742536810082",
+    "https://ik.imagekit.io/ajoy/banner/banner3.webp?updatedAt=1742536810342",
   ];
 
   const buttonText = "ADMISSIONS"

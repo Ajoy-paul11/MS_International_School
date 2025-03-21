@@ -3,12 +3,12 @@ import Tilt from "react-parallax-tilt";
 import image1 from "../assets/gallery/image1.jpg";
 import image2 from "../assets/gallery/image2.jpg";
 import image3 from "../assets/gallery/image3.jpg";
-import image4 from "../assets/gallery/image4.jpg";
-import image5 from "../assets/gallery/image5.jpg";
-import image6 from "../assets/gallery/image6.jpg";
-import image7 from "../assets/gallery/image7.jpg";
-import image8 from "../assets/gallery/image8.jpg";
-import image9 from "../assets/gallery/image9.jpg";
+import image4 from "../assets/gallery/image4.webp";
+import image5 from "../assets/gallery/image5.webp";
+import image6 from "../assets/gallery/image6.webp";
+import image7 from "../assets/gallery/image7.webp";
+import image8 from "../assets/gallery/image8.webp";
+import image9 from "../assets/gallery/image9.webp";
 
 
 function GallerySection() {
