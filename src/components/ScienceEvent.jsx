@@ -13,7 +13,7 @@ import scienceEvent10 from "../assets/scienceday/science-day10.jpg";
 import scienceEvent11 from "../assets/scienceday/science-day11.jpg";
 import scienceEvent12 from "../assets/scienceday/science-day12.jpg";
 import scienceEvent13 from "../assets/scienceday/science-day13.jpeg";
-import scienceEvent14 from "../assets/scienceday/science-day14.jpeg";
+import scienceEvent14 from "../assets/scienceday/science-day14.jpg";
 import scienceEvent15 from "../assets/scienceday/science-day15.jpeg";
 
 function ScienceEvent() {
@@ -88,11 +88,18 @@ function ScienceEvent() {
             <img src={scienceEvent7} alt="science-day-image" className="" />
           </div>
           <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
+            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
             <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Science Exibition
+              Rain Water Harvesting Model
             </div>
-            <img src={scienceEvent4} alt="science-day-image" className="" />
+            <img src={scienceEvent12} alt="science-day-image" className="" />
+          </div>
+          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
+            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
+            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
+              Chemical Experiment
+            </div>
+            <img src={scienceEvent13} alt="science-day-image" className="" />
           </div>
           <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
             <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
@@ -118,23 +125,16 @@ function ScienceEvent() {
           <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
             <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
             <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Rain Water Harvesting Model
-            </div>
-            <img src={scienceEvent12} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Chemical Experiment
-            </div>
-            <img src={scienceEvent13} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
               Internal Organ Explaination
             </div>
             <img src={scienceEvent14} alt="science-day-image" className="" />
+          </div>
+          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
+            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
+            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
+              Science Exibition
+            </div>
+            <img src={scienceEvent4} alt="science-day-image" className="" />
           </div>
           <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
             <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
