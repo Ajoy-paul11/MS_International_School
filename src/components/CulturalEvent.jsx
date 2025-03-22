@@ -56,9 +56,11 @@ function CulturalEvent() {
           {images.map((image, index) => (
             <div
               key={index}
-              className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
+              className=" bg-color rounded-lg shadow-[0_4px_6px_rgba(0,0,0,0.1)] w-full h-full"
             >
-              <LazyLoadImage src={image} alt="culture-image" effect="blur" loading="lazy"/>
+              <LazyLoadImage src={image} alt="culture-image" effect="blur" loading="lazy" wrapperProps={{
+              style: {transitionDelay: "1s" , width: "100%", height: "100%"},
+             }} className=" rounded-lg"/>
             </div>
           ))}
         </div>

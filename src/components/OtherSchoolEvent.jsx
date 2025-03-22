@@ -58,7 +58,9 @@ function OtherSchoolEvent() {
               key={index}
               className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
             >
-              <LazyLoadImage src={image} alt="event-image" effect="blur" loading="lazy"/>
+              <LazyLoadImage src={image} alt="event-image" effect="blur" loading="lazy" wrapperProps={{
+                style: {width: "100%", height: "100%" , transitionDelay: "1s" ,},
+              }}/>
             </div>
           ))}
         </div>
