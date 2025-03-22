@@ -9,7 +9,6 @@ import event6 from "../assets/otherevent/event6.webp";
 import event7 from "../assets/otherevent/event7.webp";
 import event8 from "../assets/otherevent/event8.webp";
 import event9 from "../assets/otherevent/event9.webp";
-// import event10 from "../assets/otherevent/event10.jpeg";
 import event11 from "../assets/otherevent/event11.jpeg";
 import event12 from "../assets/otherevent/event12.jpeg";
 import event13 from "../assets/otherevent/event13.jpeg";
