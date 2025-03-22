@@ -1,7 +1,7 @@
 import React from "react";
 import bgImage from "../assets/independence-bg.jpeg";
 import inde1 from "../assets/independenceday/inde1.jpeg";
-import inde2 from "../assets/independenceday/inde2.jpeg";
+import inde2 from "../assets/independenceday/inde2.jpg";
 import inde3 from "../assets/independenceday/inde3.jpeg";
 import inde4 from "../assets/independenceday/inde4.jpeg";
 import inde5 from "../assets/independenceday/inde5.jpeg";
@@ -10,7 +10,7 @@ import inde7 from "../assets/independenceday/inde7.jpeg";
 import inde8 from "../assets/independenceday/inde8.jpeg";
 import inde9 from "../assets/independenceday/inde9.jpeg";
 import inde10 from "../assets/independenceday/inde10.jpeg";
-import inde11 from "../assets/independenceday/inde11.jpeg";
+import inde11 from "../assets/independenceday/inde11.jpg";
 import inde12 from "../assets/independenceday/inde12.jpeg";
 import inde13 from "../assets/independenceday/inde13.jpeg";
 import inde14 from "../assets/independenceday/inde14.jpeg";
