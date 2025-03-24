@@ -15,30 +15,90 @@ function Footer() {
               <div className=" flex flex-col justify-center items-start gap-4">
                 <h3 className="option font-semibold">About Us</h3>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link to={"/governing-body"} className=" hover:text-purple-700 duration-300">Governing Body</Link>
-                  <Link to={"/overview"} className=" hover:text-purple-700 duration-300">Overview</Link>
-                  <Link to={"/chairman"} className=" hover:text-purple-700 duration-300">Chairman</Link>
-                  <Link to={"/faculty"} className=" hover:text-purple-700 duration-300">Faculty</Link>
+                  <Link
+                    to={"/governing-body"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Governing Body
+                  </Link>
+                  <Link
+                    to={"/overview"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Overview
+                  </Link>
+                  <Link
+                    to={"/chairman"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Chairman
+                  </Link>
+                  <Link
+                    to={"/faculty"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Faculty
+                  </Link>
                 </div>
               </div>
               <div className=" flex flex-col justify-center items-start gap-4">
                 <h3 className="option font-semibold">Know Us</h3>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link to={"/facilities"} className=" hover:text-purple-700 duration-300">Facilities</Link>
-                  <Link to={"/programme"} className=" hover:text-purple-700 duration-300">Programme</Link>
-                  <Link to={"/award"} className=" hover:text-purple-700 duration-300">Award</Link>
-                  <Link to={"/hostel"} className=" hover:text-purple-700 duration-300">Hostel</Link>
+                  <Link
+                    to={"/facilities"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Facilities
+                  </Link>
+                  <Link
+                    to={"/programme"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Programme
+                  </Link>
+                  <Link
+                    to={"/award"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Award
+                  </Link>
+                  <Link
+                    to={"/hostel"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Hostel
+                  </Link>
                 </div>
               </div>
               <div className=" flex flex-col justify-center items-startstart gap-4">
                 <div className=" w-fit">
-                <h3 className="option line font-semibold">Event</h3>
+                  <h3 className="option line font-semibold">Event</h3>
                 </div>
                 <div className=" flex flex-col gap-2 lg:gap-4">
-                  <Link to={"/science-event"} className=" hover:text-purple-700 duration-300">Science Event</Link>
-                  <Link to={"/independence-day"} className=" hover:text-purple-700 duration-300">Independence Day</Link>
-                  <Link to={"/cultural-event"} className=" hover:text-purple-700 duration-300">Cultural Event</Link>
-                  <Link to={"/other-school-event"} className=" hover:text-purple-700 duration-300">Other Event</Link>
+                  <Link
+                    to={"/science-event"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Science Event
+                  </Link>
+                  <Link
+                    to={"/independence-day"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Independence Day
+                  </Link>
+                  <Link
+                    to={"/cultural-event"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Cultural Event
+                  </Link>
+                  <Link
+                    to={"/other-school-event"}
+                    className=" hover:text-purple-700 duration-300"
+                  >
+                    Other Event
+                  </Link>
                 </div>
               </div>
             </div>
@@ -55,27 +115,56 @@ function Footer() {
           <hr className=" border-color" />
           <div className=" container mx-auto p-4 lg:p-8 flex flex-col xl:flex-row justify-between items-center gap-y-4 primary-text-color">
             <div className=" font-semibold text-base xl:text-lg">
-              &copy; Copyright MS International Public School{" "}{new Date().getFullYear()}.
-              <br className=" block md:hidden"/> All rights reserved.
+              &copy; Copyright MS International Public School{" "}
+              {new Date().getFullYear()}.
+              <br className=" block md:hidden" /> All rights reserved.
             </div>
             <div className=" flex gap-4 primary-text-color">
-              <Link to="/disclaimer" className=" hover:text-purple-700 duration-300 text-base">Disclaimer</Link>
-              <Link to="/terms-and-conditions" className=" hover:text-purple-700 duration-300 text-base">T&C</Link>
-              <Link to="/privacy-policy" className=" hover:text-purple-700 duration-300 text-base">Privacy Policy</Link>
+              <Link
+                to="/disclaimer"
+                className=" hover:text-purple-700 duration-300 text-base"
+              >
+                Disclaimer
+              </Link>
+              <Link
+                to="/terms-and-conditions"
+                className=" hover:text-purple-700 duration-300 text-base"
+              >
+                T&C
+              </Link>
+              <Link
+                to="/privacy-policy"
+                className=" hover:text-purple-700 duration-300 text-base"
+              >
+                Privacy Policy
+              </Link>
             </div>
             <div className=" flex gap-4">
               <div>
-                <Link to={"https://www.youtube.com/@msinternationalpublicschoo8296"} target="_blank">
+                <Link
+                  to={"https://www.youtube.com/@msinternationalpublicschoo8296"}
+                  target="_blank"
+                >
                   <FaYoutube className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>
               <div>
-                <Link to={"https://www.facebook.com/p/MS-International-Public-School-100083362081406/"} target="_blank">
+                <Link
+                  to={
+                    "https://www.facebook.com/p/MS-International-Public-School-100083362081406/"
+                  }
+                  target="_blank"
+                >
                   <FaFacebook className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>
               <div>
-                <Link to={"https://www.instagram.com/ms_international_public_school/"} target="_blank">
+                <Link
+                  to={
+                    "https://www.instagram.com/ms_international_public_school/"
+                  }
+                  target="_blank"
+                >
                   <SiInstagram className=" w-6 h-6 primary-text-color" />
                 </Link>
               </div>

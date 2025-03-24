@@ -20,7 +20,7 @@ function AboutSection() {
                   About
                 </h2>
               </div> */}
-              <div >
+              <div>
                 <img src={logo} alt="logo" className=" w-[300px]" />
               </div>
               <div className=" px-4 lg:px-16 cta-text-color">

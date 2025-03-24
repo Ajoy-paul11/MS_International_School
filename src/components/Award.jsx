@@ -9,8 +9,18 @@ import award6 from "../assets/award/award6.jpg";
 import award7 from "../assets/award/award7.jpeg";
 import award8 from "../assets/award/award8.jpeg";
 
-
 function Award() {
+  const images = [
+    award1,
+    award2,
+    award3,
+    award4,
+    award5,
+    award6,
+    award7,
+    award8,
+  ];
+
   return (
     <div>
       <div>
@@ -32,32 +42,17 @@ function Award() {
         </div>
         <div className="  bg-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 p-8 lg:px-12 xl:px-16 ">
           {/* Images would come */}
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award1} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award2} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award3} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award4} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award5} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award6} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award7} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={award8} alt="science-day-image" className="" />
-          </div>
+
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
+            >
+              <img src={image} alt="award-image" className="" />
+            </div>
+          ))}
         </div>
-        <hr className=" border-color"/>
+        <hr className=" border-color" />
       </div>
     </div>
   );

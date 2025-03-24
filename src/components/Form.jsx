@@ -6,49 +6,48 @@ import { Textarea } from "@mantine/core";
 import { toast } from "react-toastify";
 
 function Form() {
-    const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors },
-      } = useForm();
-      const [isSubmitting, setIsSubmitting] = useState(false);
-      
-    
-      const onSubmit = async (data) => {
-        try {
-          setIsSubmitting(true);
-          const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-    
-          const result = await response.json();
-    
-          if (result.success) {
-            // Push the form submission event to dataLayer
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-              event: "form_submission",
-              formId: "admission_form",
-            });
-    
-            toast.success("Message sent Successfully");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-            reset();
-          } else {
-            toast.error(result.message || "Failed to send message");
-          }
-        } catch (error) {
-          toast.error(error.message || "Internal Server Error, Please try again!");
-        } finally {
-          setIsSubmitting(false);
-        }
-      };
+  const onSubmit = async (data) => {
+    try {
+      setIsSubmitting(true);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Push the form submission event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "form_submission",
+          formId: "admission_form",
+        });
+
+        toast.success("Message sent Successfully");
+
+        reset();
+      } else {
+        toast.error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      toast.error(error.message || "Internal Server Error, Please try again!");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className=" w-full bg-color primary-text-color p-6 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.25)] ">

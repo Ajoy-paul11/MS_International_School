@@ -5,7 +5,6 @@ import { FaWpforms } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "../assets/MS-Logo.png";
 
-
 function NavItem({ title, dropdownItems, isAdmission }) {
   const [isOpen, setIsOpen] = useState(false);
 

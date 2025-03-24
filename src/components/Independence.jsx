@@ -16,7 +16,6 @@ import inde13 from "../assets/independenceday/inde13.jpeg";
 import inde14 from "../assets/independenceday/inde14.jpeg";
 import inde15 from "../assets/independenceday/inde15.jpeg";
 
-
 function Independence() {
   return (
     <div>
@@ -85,7 +84,7 @@ function Independence() {
             <img src={inde15} alt="science-day-image" className="" />
           </div>
         </div>
-        <hr className=" border-color"/>
+        <hr className=" border-color" />
       </div>
     </div>
   );

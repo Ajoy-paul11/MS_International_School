@@ -5,7 +5,9 @@ function ChairmanSection() {
   return (
     <div className=" py-8">
       <div className=" w-[330px] h-[40px] mx-auto my-4 cta-color rounded-tl-full rounded-br-full flex justify-center items-center">
-        <h2 className=" cta-text-color text-xl lg:text-3xl font-bold">Chairman Message</h2>
+        <h2 className=" cta-text-color text-xl lg:text-3xl font-bold">
+          Chairman Message
+        </h2>
       </div>
       <div className=" w-full bg-color flex flex-col gap-y-12 lg:flex-row justify-center items-center p-8 lg:p-12">
         <div className=" w-full lg:w-1/2 primary-text-color p-2 order-2 text-lg lg:text-xl xl:text-3xl text-center font-bold">

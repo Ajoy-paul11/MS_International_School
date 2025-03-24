@@ -132,13 +132,20 @@ function Hostel() {
           </div>
           <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg xl:text-2xl md:px-4">
             <div className="my-2 ">
-            The Hostel provides quality food and hygienic living space. The hostel is located inside the school campus to enable an easy and quick commute.
+              The Hostel provides quality food and hygienic living space. The
+              hostel is located inside the school campus to enable an easy and
+              quick commute.
               <div className="mt-2">
                 <h4 className="mt-2 font-semibold">Mess Includes:</h4>
                 <ul className="list-disc list-inside">
-                  <li>Freshly prepared and hygienic meals for kids at the hostel.</li>
+                  <li>
+                    Freshly prepared and hygienic meals for kids at the hostel.
+                  </li>
                   <li>Breakfast + Lunch + Dinner are provided on all days.</li>
-                  <li>Breakfast + Lunch + Dinner on Sundays and school holidays as well.</li>
+                  <li>
+                    Breakfast + Lunch + Dinner on Sundays and school holidays as
+                    well.
+                  </li>
                 </ul>
               </div>
             </div>

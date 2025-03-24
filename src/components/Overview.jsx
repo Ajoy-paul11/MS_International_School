@@ -65,7 +65,7 @@ function Overview() {
             </AspectRatio>
           </div>
         </div>
-        <hr className=" border-color"/>
+        <hr className=" border-color" />
       </div>
     </div>
   );

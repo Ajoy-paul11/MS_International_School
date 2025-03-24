@@ -147,68 +147,66 @@ function Programme() {
             )}
             {openContent && (
               <div className=" sm:hidden lg:grid grid-cols-2 gap-6 gap-x-64 xl:hidden">
-              <div className=" space-y-4  w-[265px]">
-                <h3 className=" my-2 text-2xl font-bold ">
-                  Our Pre-School is a Celebration Of Childhood
-                </h3>
-                <div className=" text-lg lg:text-xl">
-                  Our LKG & UKG classrooms inspire awe and wonder and equate
-                  learning with a sense of magic and freedom. We believe that
-                  children are not just empty vessels to be filled with facts.
-                  They are extraordinary humans capable of understanding complex
-                  ideas. We do not water down for academics but rather present a
-                  rich feast of ideas.
+                <div className=" space-y-4  w-[265px]">
+                  <h3 className=" my-2 text-2xl font-bold ">
+                    Our Pre-School is a Celebration Of Childhood
+                  </h3>
+                  <div className=" text-lg lg:text-xl">
+                    Our LKG & UKG classrooms inspire awe and wonder and equate
+                    learning with a sense of magic and freedom. We believe that
+                    children are not just empty vessels to be filled with facts.
+                    They are extraordinary humans capable of understanding
+                    complex ideas. We do not water down for academics but rather
+                    present a rich feast of ideas.
+                  </div>
+                </div>
+                <div className=" space-y-4  w-[265px]">
+                  <h3 className="  my-2 text-2xl font-bold ">
+                    Secondary School VI- X
+                  </h3>
+                  <div className=" text-lg lg:text-xl">
+                    Our Primary classes focus on a hands-on, multi-disciplinary
+                    and multi-sensory instructional approach that focuses on
+                    nurturing our student’s creativity, imagination and
+                    interpersonal & social skills. Our teachers are able to
+                    maximize teaching & learning through one-on-one teaching to
+                    provide the best teaching to kids. These years are focused
+                    on inquiry and wonder, which are vital components of
+                    becoming life-long learners.
+                  </div>
+                </div>
+                <div className=" space-y-4  w-[265px]">
+                  <h3 className=" my-2 text-2xl font-bold ">
+                    Secondary School VI- X
+                  </h3>
+                  <ul className=" text-lg lg:text-xl">
+                    <li type="circle">
+                      Empowering Children with the confidence to face the future
+                    </li>
+                    <li type="circle">Physical and mental fitness training</li>
+                    <li type="circle">Society related activity</li>
+                    <li type="circle">Parental involvement</li>
+                    <li type="circle">Etiquette grooming</li>
+                    <li type="circle">Quality knowledge management</li>
+                    <li type="circle">Training in Journalism</li>
+                    <li type="circle">Honing life skills</li>
+                    <li type="circle">Academic excellence</li>
+                  </ul>
+                </div>
+                <div className=" space-y-4  w-[265px]">
+                  <h3 className="  my-2 text-2xl font-bold ">IT and Skills</h3>
+                  <div className=" text-lg lg:text-xl">
+                    Our Primary classes focus on a hands-on, multi-disciplinary
+                    and multi-sensory instructional approach that focuses on
+                    nurturing our student’s creativity, imagination and
+                    interpersonal & social skills. Our teachers are able to
+                    maximize teaching & learning through one-on-one teaching to
+                    provide the best teaching to kids. These years are focused
+                    on inquiry and wonder, which are vital components of
+                    becoming life-long learners.
+                  </div>
                 </div>
               </div>
-              <div className=" space-y-4  w-[265px]">
-                <h3 className="  my-2 text-2xl font-bold ">
-                  Secondary School VI- X
-                </h3>
-                <div className=" text-lg lg:text-xl">
-                  Our Primary classes focus on a hands-on, multi-disciplinary
-                  and multi-sensory instructional approach that focuses on
-                  nurturing our student’s creativity, imagination and
-                  interpersonal & social skills. Our teachers are able to
-                  maximize teaching & learning through one-on-one teaching to
-                  provide the best teaching to kids. These years are focused on
-                  inquiry and wonder, which are vital components of becoming
-                  life-long learners.
-                </div>
-              </div>
-              <div className=" space-y-4  w-[265px]">
-                <h3 className=" my-2 text-2xl font-bold ">
-                  Secondary School VI- X
-                </h3>
-                <ul className=" text-lg lg:text-xl">
-                  <li type="circle">
-                    Empowering Children with the confidence to face the future
-                  </li>
-                  <li type="circle">Physical and mental fitness training</li>
-                  <li type="circle">Society related activity</li>
-                  <li type="circle">Parental involvement</li>
-                  <li type="circle">Etiquette grooming</li>
-                  <li type="circle">Quality knowledge management</li>
-                  <li type="circle">Training in Journalism</li>
-                  <li type="circle">Honing life skills</li>
-                  <li type="circle">Academic excellence</li>
-                </ul>
-              </div>
-              <div className=" space-y-4  w-[265px]">
-                <h3 className="  my-2 text-2xl font-bold ">
-                 IT and Skills
-                </h3>
-                <div className=" text-lg lg:text-xl">
-                  Our Primary classes focus on a hands-on, multi-disciplinary
-                  and multi-sensory instructional approach that focuses on
-                  nurturing our student’s creativity, imagination and
-                  interpersonal & social skills. Our teachers are able to
-                  maximize teaching & learning through one-on-one teaching to
-                  provide the best teaching to kids. These years are focused on
-                  inquiry and wonder, which are vital components of becoming
-                  life-long learners.
-                </div>
-              </div>
-            </div>
             )}
             <div className=" lg:hidden flex flex-col gap-6">
               <div className=" space-y-4">
@@ -258,9 +256,7 @@ function Programme() {
                 </ul>
               </div>
               <div className=" space-y-4">
-                <h3 className="  my-2 text-2xl font-bold ">
-                  IT and Skills
-                </h3>
+                <h3 className="  my-2 text-2xl font-bold ">IT and Skills</h3>
                 <div className=" text-lg lg:text-xl">
                   Our Primary classes focus on a hands-on, multi-disciplinary
                   and multi-sensory instructional approach that focuses on

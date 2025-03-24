@@ -12,8 +12,8 @@ import event9 from "../assets/otherevent/event9.webp";
 import event11 from "../assets/otherevent/event11.jpeg";
 import event12 from "../assets/otherevent/event12.jpeg";
 import event13 from "../assets/otherevent/event13.jpeg";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function OtherSchoolEvent() {
   const images = [
@@ -36,7 +36,7 @@ function OtherSchoolEvent() {
       <div>
         <div
           className=" w-full h-[245px] bg-center bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${bgImage})`}}
+          style={{ backgroundImage: `url(${bgImage})` }}
         >
           {/* Background black effect */}
           <div className=" w-full h-full bg-black/60">
@@ -57,9 +57,19 @@ function OtherSchoolEvent() {
               key={index}
               className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
             >
-              <LazyLoadImage src={image} alt="event-image" effect="blur" loading="lazy" wrapperProps={{
-                style: {width: "100%", height: "100%" , transitionDelay: "1s" ,},
-              }}/>
+              <LazyLoadImage
+                src={image}
+                alt="event-image"
+                effect="blur"
+                loading="lazy"
+                wrapperProps={{
+                  style: {
+                    width: "100%",
+                    height: "100%",
+                    transitionDelay: "1s",
+                  },
+                }}
+              />
             </div>
           ))}
         </div>

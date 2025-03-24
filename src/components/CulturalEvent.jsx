@@ -12,15 +12,15 @@ import cultureImage9 from "../assets/culturealevent/cultural9.webp";
 import cultureImage10 from "../assets/culturealevent/cultural10.webp";
 import cultureImage11 from "../assets/culturealevent/cultural11.webp";
 import cultureImage12 from "../assets/culturealevent/cultural12.webp";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function CulturalEvent() {
   const images = [
     cultureImage1,
     cultureImage2,
     cultureImage3,
-    cultureImage4,    
+    cultureImage4,
     cultureImage5,
     cultureImage6,
     cultureImage7,
@@ -30,7 +30,6 @@ function CulturalEvent() {
     cultureImage11,
     cultureImage12,
   ];
-
 
   return (
     <div>
@@ -58,9 +57,20 @@ function CulturalEvent() {
               key={index}
               className=" bg-color rounded-lg shadow-[0_4px_6px_rgba(0,0,0,0.1)] w-full h-full"
             >
-              <LazyLoadImage src={image} alt="culture-image" effect="blur" loading="lazy" wrapperProps={{
-              style: {transitionDelay: "1s" , width: "100%", height: "100%"},
-             }} className=" rounded-lg"/>
+              <LazyLoadImage
+                src={image}
+                alt="culture-image"
+                effect="blur"
+                loading="lazy"
+                wrapperProps={{
+                  style: {
+                    transitionDelay: "1s",
+                    width: "100%",
+                    height: "100%",
+                  },
+                }}
+                className=" rounded-lg"
+              />
             </div>
           ))}
         </div>

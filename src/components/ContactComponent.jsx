@@ -13,8 +13,6 @@ export default function ContactComponent() {
     formState: { errors },
   } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  
-  
 
   const onSubmit = async (data) => {
     try {
@@ -244,17 +242,6 @@ export default function ContactComponent() {
                   </button>
                 </Fieldset>
               </form>
-              {/* {message && (
-                <div
-                  className={`mt-4 p-4 rounded-md ${
-                    isSuccess
-                      ? "bg-green-100 text-green-700"
-                      : "bg-red-100 text-red-700"
-                  }`}
-                >
-                  {message}
-                </div>
-              )} */}
             </div>
           </div>
         </div>

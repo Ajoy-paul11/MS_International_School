@@ -2,11 +2,11 @@ import React from "react";
 import bgImage from "../assets/bg-image2.png";
 import library from "../assets/facility/library-hall.jpg";
 import classroom from "../assets/facility/projector-classroom.jpg";
-import computer from "../assets/facility/computer-lab.jpg"
-import transport from "../assets/facility/buses.png"
-import sports from "../assets/facility/sport-room.png"
-import lab from "../assets/facility/science-lab.jpg"
-import agriLab from "../assets/facility/agriculture-lab.png"
+import computer from "../assets/facility/computer-lab.jpg";
+import transport from "../assets/facility/buses.png";
+import sports from "../assets/facility/sport-room.png";
+import lab from "../assets/facility/science-lab.jpg";
+import agriLab from "../assets/facility/agriculture-lab.png";
 
 function Facility() {
   return (
@@ -80,7 +80,9 @@ function Facility() {
               COMPUTER LAB
             </h3>
             <p className="my-2 lg:pr-4 xl:pr-6 text-start lg:text-end">
-            The computer laboratory has over 50 computers with a dedicated broadband Internet connection for students. Student usage of media and technology is monitored and supervised by teachers.
+              The computer laboratory has over 50 computers with a dedicated
+              broadband Internet connection for students. Student usage of media
+              and technology is monitored and supervised by teachers.
             </p>
           </div>
           <div className=" w-full lg:w-1/2 order-1 lg:order-2">
@@ -105,7 +107,9 @@ function Facility() {
               TRANSPORT
             </h3>
             <p className="my-2 lg:pl-4 xl:pl-6">
-            MS International assures the safety, and security of each and every student, experienced bus operator, and bus attendant who take care of bus services to and from school to all parts of city.
+              MS International assures the safety, and security of each and
+              every student, experienced bus operator, and bus attendant who
+              take care of bus services to and from school to all parts of city.
             </p>
           </div>
         </div>
@@ -116,7 +120,9 @@ function Facility() {
               SPORTS ROOM
             </h3>
             <p className="my-2 lg:pr-4 xl:pr-6 text-start lg:text-end">
-            We at MS International see that kids enjoy each and every aspect of their childhood by giving them the best education as well as providing the best of sports equipment.
+              We at MS International see that kids enjoy each and every aspect
+              of their childhood by giving them the best education as well as
+              providing the best of sports equipment.
             </p>
           </div>
           <div className=" w-full lg:w-1/2 order-1 lg:order-2">
@@ -141,7 +147,10 @@ function Facility() {
               SCIENCE LAB
             </h3>
             <p className="my-2 lg:pl-4 xl:pl-6">
-            Equipped with fully functional physics, chemistry and biology laboratories so that the students can conduct experiments in order to gain first-hand experience of the concepts learned in the classrooms.
+              Equipped with fully functional physics, chemistry and biology
+              laboratories so that the students can conduct experiments in order
+              to gain first-hand experience of the concepts learned in the
+              classrooms.
             </p>
           </div>
         </div>
@@ -149,10 +158,13 @@ function Facility() {
           <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg lg:text-xl xl:text-2xl text-center font-bold">
             <h3 className="my-2 text-3xl font-bold text-center relative top-[-15px] lg:top-[-30px]">
               {" "}
-            AGRICULTURAL LAB
+              AGRICULTURAL LAB
             </h3>
             <p className="my-2 lg:pr-4 xl:pr-6 text-start lg:text-end">
-            At MS International, we have built an agricultural lab for the students for them to stick to their roots and understand the importance & difficulty of farmers, and eventually, train them for the betterment of the society.
+              At MS International, we have built an agricultural lab for the
+              students for them to stick to their roots and understand the
+              importance & difficulty of farmers, and eventually, train them for
+              the betterment of the society.
             </p>
           </div>
           <div className=" w-full lg:w-1/2 order-1 lg:order-2">
