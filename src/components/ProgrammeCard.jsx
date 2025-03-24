@@ -26,7 +26,7 @@ function ProgrammeCard({
         </div>
         <button
           onClick={() => setOpenContent(!openContent)}
-          className={` bg-[#D97706] py-2 px-3 text-white rounded-lg font-semibold hover:cursor-pointer ${bgbutton}`}
+          className={` hidden lg:block bg-[#D97706] py-2 px-3 text-white rounded-lg font-semibold hover:cursor-pointer ${bgbutton}`}
         >
           {openContent ? "Show less" : "Know more"}
         </button>

@@ -3,7 +3,7 @@ import bgImage from "../assets/bg-image2.png";
 import library from "../assets/facility/library-hall.jpg";
 import classroom from "../assets/facility/projector-classroom.jpg";
 import computer from "../assets/facility/computer-lab.jpg";
-import transport from "../assets/facility/buses.png";
+import transport from "../assets/facility/buses.jpg";
 import sports from "../assets/facility/sport-room.png";
 import lab from "../assets/facility/science-lab.jpg";
 import agriLab from "../assets/facility/agriculture-lab.png";

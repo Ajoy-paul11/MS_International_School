@@ -36,14 +36,14 @@ function Programme() {
               broad and balanced curriculum that provides rewarding and
               stimulating activities to prepare them for the best social and
               cultural life.
-              <p className="my-2 indent-4">
+            </p>
+            <p className="my-2 indent-4">
                 Whether it is our books or hands-on training we make sure each
                 student gets personal attention to cope up and flourish in every
                 subject for better scores and a brighter future.
               </p>
-            </p>
           </div>
-          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-6 lg:grid grid-cols-2 place-items-center xl:flex">
+          <div className=" container mx-auto flex flex-col lg:flex-row justify-evenly items-center gap-10 lg:grid grid-cols-2 place-items-center xl:flex">
             <ProgrammeCard
               pic={preSchool}
               phase={"Pre-School"}
@@ -85,7 +85,7 @@ function Programme() {
             {openContent && (
               <div className=" hidden xl:flex w-full gap-6 justify-evenly ">
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold ">
-                  Our Pre-School is a Celebration Of Childhood
+                  Pre-School
                 </h3>
                 <h3 className=" w-[260px] xl:w-[290px] my-2 text-2xl font-bold">
                   Primary Grade I-V
@@ -109,14 +109,11 @@ function Programme() {
                   rich feast of ideas.
                 </div>
                 <div className=" w-[260px] xl:w-[290px] text-lg lg:text-xl">
-                  Our Primary classes focus on a hands-on, multi-disciplinary
-                  and multi-sensory instructional approach that focuses on
-                  nurturing our student’s creativity, imagination and
-                  interpersonal & social skills. Our teachers are able to
-                  maximize teaching & learning through one-on-one teaching to
-                  provide the best teaching to kids. These years are focused on
-                  inquiry and wonder, which are vital components of becoming
-                  life-long learners.
+                  Our Primary classes use a hands-on, multi-disciplinary, and
+                  multi-sensory approach to nurture creativity, imagination, and
+                  social skills. With personalized one-on-one teaching, our
+                  teachers maximize learning. These years emphasize inquiry and
+                  wonder, fostering a foundation for lifelong learning.
                 </div>
                 <div className=" w-[260px] xl:w-[290px]">
                   <ul className=" text-lg lg:text-xl">
@@ -134,30 +131,28 @@ function Programme() {
                   </ul>
                 </div>
                 <div className=" w-[260px] xl:w-[290px] text-lg lg:text-xl">
-                  Our Primary classes focus on a hands-on, multi-disciplinary
-                  and multi-sensory instructional approach that focuses on
-                  nurturing our student’s creativity, imagination and
-                  interpersonal & social skills. Our teachers are able to
-                  maximize teaching & learning through one-on-one teaching to
-                  provide the best teaching to kids. These years are focused on
-                  inquiry and wonder, which are vital components of becoming
-                  life-long learners.
+                  Our IT and Skills curriculum offers a hands-on, interactive
+                  learning experience that builds problem-solving, critical
+                  thinking, and technological proficiency. Through practical
+                  projects and personalized guidance, students explore digital
+                  tools, fostering creativity and confidence. This approach
+                  nurtures curiosity and equips students with essential
+                  21st-century skills.
                 </div>
               </div>
             )}
             {openContent && (
               <div className=" sm:hidden lg:grid grid-cols-2 gap-6 gap-x-64 xl:hidden">
                 <div className=" space-y-4  w-[265px]">
-                  <h3 className=" my-2 text-2xl font-bold ">
-                    Our Pre-School is a Celebration Of Childhood
-                  </h3>
+                  <h3 className=" my-2 text-2xl font-bold ">Pre-School</h3>
                   <div className=" text-lg lg:text-xl">
-                    Our LKG & UKG classrooms inspire awe and wonder and equate
-                    learning with a sense of magic and freedom. We believe that
-                    children are not just empty vessels to be filled with facts.
-                    They are extraordinary humans capable of understanding
-                    complex ideas. We do not water down for academics but rather
-                    present a rich feast of ideas.
+                    Our Pre-School Celebrates Childhood. Our LKG & UKG
+                    classrooms inspire awe and wonder and equate learning with a
+                    sense of magic and freedom. We believe that children are not
+                    just empty vessels to be filled with facts. They are
+                    extraordinary humans capable of understanding complex ideas.
+                    We do not water down for academics but rather present a rich
+                    feast of ideas.
                   </div>
                 </div>
                 <div className=" space-y-4  w-[265px]">
@@ -165,14 +160,12 @@ function Programme() {
                     Secondary School VI- X
                   </h3>
                   <div className=" text-lg lg:text-xl">
-                    Our Primary classes focus on a hands-on, multi-disciplinary
-                    and multi-sensory instructional approach that focuses on
-                    nurturing our student’s creativity, imagination and
-                    interpersonal & social skills. Our teachers are able to
-                    maximize teaching & learning through one-on-one teaching to
-                    provide the best teaching to kids. These years are focused
-                    on inquiry and wonder, which are vital components of
-                    becoming life-long learners.
+                    Our Primary classes use a hands-on, multi-disciplinary, and
+                    multi-sensory approach to nurture creativity, imagination,
+                    and social skills. With personalized one-on-one teaching,
+                    our teachers maximize learning. These years emphasize
+                    inquiry and wonder, fostering a foundation for lifelong
+                    learning.
                   </div>
                 </div>
                 <div className=" space-y-4  w-[265px]">
@@ -210,16 +203,14 @@ function Programme() {
             )}
             <div className=" lg:hidden flex flex-col gap-6">
               <div className=" space-y-4">
-                <h3 className=" my-2 text-2xl font-bold ">
-                  Our Pre-School is a Celebration Of Childhood
-                </h3>
+                <h3 className=" my-2 text-2xl font-bold ">Pre-School</h3>
                 <div className=" text-lg lg:text-xl">
-                  Our LKG & UKG classrooms inspire awe and wonder and equate
-                  learning with a sense of magic and freedom. We believe that
-                  children are not just empty vessels to be filled with facts.
-                  They are extraordinary humans capable of understanding complex
-                  ideas. We do not water down for academics but rather present a
-                  rich feast of ideas.
+                  Our Pre-School celebrates Childhood. Our LKG & UKG classrooms
+                  inspire awe and wonder and equate learning with a sense of
+                  magic and freedom. We believe that children are not just empty
+                  vessels to be filled with facts. They are extraordinary humans
+                  capable of understanding complex ideas. We do not water down
+                  for academics but rather present a rich feast of ideas.
                 </div>
               </div>
               <div className=" space-y-4">
@@ -258,14 +249,13 @@ function Programme() {
               <div className=" space-y-4">
                 <h3 className="  my-2 text-2xl font-bold ">IT and Skills</h3>
                 <div className=" text-lg lg:text-xl">
-                  Our Primary classes focus on a hands-on, multi-disciplinary
-                  and multi-sensory instructional approach that focuses on
-                  nurturing our student’s creativity, imagination and
-                  interpersonal & social skills. Our teachers are able to
-                  maximize teaching & learning through one-on-one teaching to
-                  provide the best teaching to kids. These years are focused on
-                  inquiry and wonder, which are vital components of becoming
-                  life-long learners.
+                  Our IT and Skills curriculum offers a hands-on, interactive
+                  learning experience that builds problem-solving, critical
+                  thinking, and technological proficiency. Through practical
+                  projects and personalized guidance, students explore digital
+                  tools, fostering creativity and confidence. This approach
+                  nurtures curiosity and equips students with essential
+                  21st-century skills.
                 </div>
               </div>
             </div>
