@@ -50,8 +50,8 @@ function Form() {
   };
 
   return (
-    <div className=" w-full bg-color primary-text-color p-6 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.25)] ">
-      <h2 className="  text-center text-xl lg:text-3xl font-bold mb-4">
+    <div className=" w-full bg-color primary-text-color p-2 2xl:p-6 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.25)] ">
+      <h2 className="  text-center text-xl xl:text-3xl font-bold mb-1 xl:mb-4">
         Contact Us
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -69,9 +69,9 @@ function Form() {
         <Fieldset
           legend="Personal Information"
           variant="filled"
-          className="bg-color"
+          className="bg-color lg:!mt-0 2xl:mt-0"
         >
-          <div className=" my-4">
+          <div className=" my-1 2xl:my-4">
             <label htmlFor="name" className="block text-sm font-medium ">
               Name
             </label>
@@ -87,7 +87,7 @@ function Form() {
               <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
             )}
           </div>
-          <div className=" my-4">
+          <div className=" my-1 2xl:my-4">
             <label htmlFor="email" className="block text-sm font-medium ">
               Email
             </label>
@@ -111,7 +111,7 @@ function Form() {
               </p>
             )}
           </div>
-          <div className=" my-4">
+          <div className=" my-1 2xl:my-4">
             <label htmlFor="phone" className="block text-sm font-medium ">
               Phone Number
             </label>
@@ -131,7 +131,7 @@ function Form() {
               </p>
             )}
           </div>
-          <div className=" my-4">
+          <div className=" my-1 2xl:my-4">
             <label htmlFor="message" className="block text-sm font-medium ">
               Message
             </label>
