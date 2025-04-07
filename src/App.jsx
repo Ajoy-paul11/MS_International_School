@@ -12,11 +12,11 @@ function App() {
   useEffect(() => {
     const textTimer = setTimeout(() => {
       setTextAnimationComplete(true);
-    }, 3000);
+    }, 2000);
 
     const splashTimer = setTimeout(() => {
       setVisible(false);
-    }, 10000);
+    }, 6000);
 
     return () => {
       clearTimeout(textTimer);

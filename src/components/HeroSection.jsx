@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import banner1 from "../assets/banner/banner1.webp";
-// import banner2 from "../assets/banner/banner2.webp";
-// import banner3 from "../assets/banner/banner3.webp";
 import { FaArrowUp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -14,7 +11,6 @@ function HeroSection() {
   const images = [
     "https://ik.imagekit.io/ajoy/banner/banner1.webp?updatedAt=1742536811478",
     "https://ik.imagekit.io/ajoy/banner/banner2.webp?updatedAt=1742536810082",
-    "https://ik.imagekit.io/ajoy/banner/banner3.webp?updatedAt=1742536810342",
   ];
 
   const buttonText = "ADMISSIONS";
@@ -53,7 +49,7 @@ function HeroSection() {
           </div>
         </div>
       )}
-      <div className="relative w-full h-full overflow-hidden">
+      <div className="relative w-full h-full lg:h-[75vh] xl:h-[70vh] overflow-hidden">
         <button
           className={` block lg:hidden fixed right-0 top-[40%] cta-color text-white z-50 px-2 py-2 rounded-l-md shadow-[0_0_10px_rgba(0,0,0,0.25)] shadow-[#234297] transition-all duration-300 ease-in-out ${
             isOpen ? "opacity-0 -translate-x-full" : "opacity-100 translate-x-0"
@@ -79,7 +75,7 @@ function HeroSection() {
         </button>
         {/* Images */}
         <div
-          className="w-full h-full flex transition-transform duration-500 ease-in-out"
+          className=" flex transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentSlide * 100}%)`,
           }}
@@ -129,7 +125,7 @@ function HeroSection() {
             <FaArrowDown className="h-4 lg:h-5 w-4 lg:w-5 text-white" />
           </button>
         </div>
-        <div className="hidden lg:block absolute top-8 xl:top-[15%] right-6 z-10 w-[300px] xl:w-[360px]">
+        <div className="hidden lg:block absolute top-8 xl:top-[10%] right-6 z-10 w-[300px] xl:w-[360px]">
           <Form />
         </div>
       </div>
