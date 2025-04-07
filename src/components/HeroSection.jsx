@@ -49,7 +49,7 @@ function HeroSection() {
           </div>
         </div>
       )}
-      <div className="relative w-full h-full lg:h-[75vh] xl:h-[70vh] overflow-hidden">
+      <div className="relative w-full h-full lg:h-[75vh] overflow-hidden mt-[65px]">
         <button
           className={` block lg:hidden fixed right-0 top-[40%] cta-color text-white z-50 px-2 py-2 rounded-l-md shadow-[0_0_10px_rgba(0,0,0,0.25)] shadow-[#234297] transition-all duration-300 ease-in-out ${
             isOpen ? "opacity-0 -translate-x-full" : "opacity-100 translate-x-0"
