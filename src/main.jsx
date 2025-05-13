@@ -22,6 +22,7 @@ import Award from "./components/Award.jsx";
 import Disclaimer from "./components/Disclaimer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
+import Career from "./components/career";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
       {
         path: "/privacy-policy",
         element: <Privacy />
+      },
+      {
+        path: "/career",
+        element: <Career />
       }
     ]
   },

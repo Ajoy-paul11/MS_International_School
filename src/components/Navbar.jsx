@@ -81,6 +81,7 @@ function Navbar() {
     },
     { title: "Award" },
     { title: "Hostel" },
+    { title: "Career" },
     { title: "Admission", isAdmission: true },
   ];
 
