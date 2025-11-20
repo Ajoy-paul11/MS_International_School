@@ -22,7 +22,7 @@ import Award from "./components/Award.jsx";
 import Disclaimer from "./components/Disclaimer";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
-import Career from "./components/career";
+import Career from "./components/Career";
 
 const router = createBrowserRouter([
   {

@@ -121,20 +121,26 @@ function Footer() {
             </div>
             <div className=" flex gap-4 primary-text-color">
               <Link
+              to="/career"
+              className=" hover:cursor-pointer hover:text-purple-700 duration-300 text-base"
+              >
+                Career
+              </Link>
+              <Link
                 to="/disclaimer"
-                className=" hover:text-purple-700 duration-300 text-base"
+                className=" hover:cursor-pointer hover:text-purple-700 duration-300 text-base"
               >
                 Disclaimer
               </Link>
               <Link
                 to="/terms-and-conditions"
-                className=" hover:text-purple-700 duration-300 text-base"
+                className=" hover:cursor-pointer hover:text-purple-700 duration-300 text-base"
               >
                 T&C
               </Link>
               <Link
                 to="/privacy-policy"
-                className=" hover:text-purple-700 duration-300 text-base"
+                className=" hover:cursor-pointer hover:text-purple-700 duration-300 text-base"
               >
                 Privacy Policy
               </Link>
