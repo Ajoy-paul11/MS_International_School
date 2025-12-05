@@ -28,7 +28,7 @@ function Chairman() {
               {" "}
               CHAIRMAN MESSAGE
             </h3>
-            <p className="my-2 ">
+            <div className="my-2 ">
               We at MS International aim at inspiring our students to dream
               more, learn more, do more, and become more in their respective
               journeys of life.
@@ -38,7 +38,7 @@ function Chairman() {
                 values, and discipline for their children. Choosing the right
                 school for them is, therefore, a crucial decision.
               </p>
-            </p>
+            </div>
           </div>
           <div className=" w-full lg:w-1/2 order-1 lg:order-2">
             <img

@@ -25,7 +25,7 @@ function Overview() {
         </div>
         <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center p-8 px-2 md:px-0 lg:px-4 xl:p-12">
           <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg lg:text-xl xl:text-2xl text-center font-bold">
-            <p className="my-2 ">
+            <div className="my-2 ">
               MS International Public School. The only school in Mandya to
               provide facilities with all the international standards. remains
               committed to providing an academically rigorous education to
@@ -39,7 +39,7 @@ function Overview() {
                 the betterment of students. Providing them education with
                 speech, written and practical’s.
               </p>
-            </p>
+            </div>
           </div>
           <div className=" w-full lg:w-1/2 order-1 lg:order-2">
             <img
