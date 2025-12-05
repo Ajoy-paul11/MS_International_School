@@ -16,6 +16,24 @@ import inde13 from "../assets/independenceday/inde13.jpeg";
 import inde14 from "../assets/independenceday/inde14.jpeg";
 import inde15 from "../assets/independenceday/inde15.jpeg";
 
+const independenceImages = [
+  inde1,
+  inde3,
+  inde4,
+  inde2,
+  inde5,
+  inde6,
+  inde7,
+  inde8,
+  inde9,
+  inde10,
+  inde11,
+  inde12,
+  inde13,
+  inde14,
+  inde15,
+];
+
 function Independence() {
   return (
     <div>
@@ -36,53 +54,16 @@ function Independence() {
             </div>
           </div>
         </div>
-        <div className="  bg-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 p-8 lg:px-12 xl:px-16 ">
+        <div className=" bg-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 p-8 lg:px-12 xl:px-16 ">
           {/* Images would come */}
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde1} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde3} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde4} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde2} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde5} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde6} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde7} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde8} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde9} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde10} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde11} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde12} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde13} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde14} alt="science-day-image" className="" />
-          </div>
-          <div className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]">
-            <img src={inde15} alt="science-day-image" className="" />
-          </div>
+          {independenceImages.map((image, index) => (
+            <div
+              key={index}
+              className=" bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
+            >
+              <img src={image} alt="science-day-image" className="" />
+            </div>
+          ))}
         </div>
         <hr className=" border-color" />
       </div>

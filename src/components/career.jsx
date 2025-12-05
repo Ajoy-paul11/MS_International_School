@@ -7,6 +7,16 @@ import { toast } from "react-toastify";
 import bgImage from "../assets/overview-bg.jpeg";
 import teacherImg from "../assets/teacher.avif";
 
+const jobPositions = [
+  "Hindi Teacher",
+  "English Teacher",
+  "Kannada Teacher",
+  "Kindergarten Teacher",
+  "Primary Teacher",
+  "PT Teacher",
+  "Hostel Warden",
+];
+
 const Career = () => {
   const {
     register,
@@ -79,13 +89,11 @@ const Career = () => {
               <h4 className="my-2 text-3xl font-bold"> Job Opportunity: </h4>
 
               <ul className="my-2 py-4 list-disc list-inside">
-                <li className="mb-1">Hindi Teacher</li>
-                <li className="mb-1">English Teacher</li>
-                <li className="mb-1">Kannada Teacher</li>
-                <li className="mb-1">Kindergarten Teacher</li>
-                <li className="mb-1">Primary Teacher</li>
-                <li className="mb-1">PT Teacher</li>
-                <li className="mb-1">Hostel Warden</li>
+                {jobPositions.map((position, index) => (
+                  <li key={index} className="mb-1">
+                    {position}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className=" w-full lg:w-1/2">

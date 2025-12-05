@@ -82,7 +82,7 @@ function Facility() {
         </div>
         {facility.map((item, _) =>
           item.id % 2 !== 0 ? (
-            <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center px-2 p-8 md:px-0 lg:px-4 xl:p-12">
+            <div key={item.id} className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center px-2 p-8 md:px-0 lg:px-4 xl:p-12">
               <div className=" w-full lg:w-1/2 cta-text-color p-2 order-2 text-lg lg:text-xl xl:text-2xl font-bold">
                 <h3 className="my-2 text-3xl font-bold text-center relative top-[-15px] lg:top-[-30px]">
                   {" "}
@@ -101,7 +101,7 @@ function Facility() {
               </div>
             </div>
           ) : (
-            <div className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center px-2 p-8 md:px-0 lg:px-4 xl:p-12">
+            <div key={item.id} className=" w-full cta-color flex flex-col gap-y-12 lg:flex-row justify-center items-center px-2 p-8 md:px-0 lg:px-4 xl:p-12">
               <div className=" w-full lg:w-1/2 order-1 lg:order-2">
                 <img
                   src={item.image}

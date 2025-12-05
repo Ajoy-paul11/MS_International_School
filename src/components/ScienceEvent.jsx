@@ -16,6 +16,69 @@ import scienceEvent13 from "../assets/scienceday/science-day13.jpeg";
 import scienceEvent14 from "../assets/scienceday/science-day14.jpg";
 import scienceEvent15 from "../assets/scienceday/science-day15.jpeg";
 
+const scienceEvents = [
+  {
+    title: "Drip Irrigation Model",
+    image: scienceEvent1,
+  },
+  {
+    title: "Air Pollution Model",
+    image: scienceEvent2,
+  },
+  {
+    title: "Town Model",
+    image: scienceEvent3,
+  },
+  {
+    title: "The Diagram of Brain",
+    image: scienceEvent8,
+  },
+  {
+    title: "Solar System Model",
+    image: scienceEvent5,
+  },
+  {
+    title: "Internal Organs Model",
+    image: scienceEvent9,
+  },
+  {
+    title: "Live Chemistry Practical",
+    image: scienceEvent7,
+  },
+  {
+    title: "Rain Water Harvesting Model",
+    image: scienceEvent12,
+  },
+  {
+    title: "Chemical Experiment",
+    image: scienceEvent13,
+  },
+  {
+    title: "Volcano Model",
+    image: scienceEvent6,
+  },
+  {
+    title: "Physics Project",
+    image: scienceEvent10,
+  },
+  {
+    title: "Environmental Model",
+    image: scienceEvent11,
+  },
+  {
+    title: "Internal Organ Explanation",
+    image: scienceEvent14,
+  },
+  {
+    title: "Science Exhibition",
+    image: scienceEvent4,
+  },
+  {
+    title: "Fire Extinguisher Model",
+    image: scienceEvent15,
+  },
+];
+
 function ScienceEvent() {
   return (
     <div>
@@ -38,111 +101,18 @@ function ScienceEvent() {
         </div>
         <div className="  bg-color grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-10 p-8 lg:px-12 xl:px-16">
           {/* Images would come */}
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Drip Irrigation Model
+          {scienceEvents.map((scieve, index) => (
+            <div
+              key={index}
+              className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group"
+            >
+              <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
+              <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
+                {scieve.title}
+              </div>
+              <img src={scieve.image} alt="science-day-image" className="" />
             </div>
-            <img src={scienceEvent1} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Air Polution Model
-            </div>
-            <img src={scienceEvent2} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Town Model
-            </div>
-            <img src={scienceEvent3} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              The Diagram of Brain
-            </div>
-            <img src={scienceEvent8} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 group" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Solar System Model
-            </div>
-            <img src={scienceEvent5} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 group" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Internal Organs Model
-            </div>
-            <img src={scienceEvent9} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 group" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Live Chemistry Practical
-            </div>
-            <img src={scienceEvent7} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Rain Water Harvesting Model
-            </div>
-            <img src={scienceEvent12} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Chemical Experiment
-            </div>
-            <img src={scienceEvent13} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Volcano Model
-            </div>
-            <img src={scienceEvent6} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Physics Project
-            </div>
-            <img src={scienceEvent10} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Environmental Model
-            </div>
-            <img src={scienceEvent11} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Internal Organ Explaination
-            </div>
-            <img src={scienceEvent14} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300" />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Science Exibition
-            </div>
-            <img src={scienceEvent4} alt="science-day-image" className="" />
-          </div>
-          <div className=" relative bg-color rounded-lg overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.1)] group">
-            <div className="absolute inset-0 bg-black/70 group-hover:bg-black/0 transition-all duration-300 " />
-            <div className="absolute inset-0 flex items-center justify-center cta-text-color text-xl lg:text-3xl font-semibold p-4 text-center group-hover:opacity-0 transition-opacity duration-300">
-              Fire Extinguisher Model
-            </div>
-            <img src={scienceEvent15} alt="science-day-image" className="" />
-          </div>
+          ))}
         </div>
         <hr className=" border-color" />
       </div>
